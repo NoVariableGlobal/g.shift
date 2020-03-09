@@ -6,6 +6,11 @@
 *.lo
 *.o
 *.obj
+*.pdb
+*.iobj
+*.ipdb
+*.ilk
+*.log
 
 # Precompiled Headers
 *.gch
@@ -34,3 +39,4 @@
 .vs/
 .vscode/
 .idea/
+.temp/
