@@ -2,7 +2,6 @@
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
-#include "LifeC.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
 
