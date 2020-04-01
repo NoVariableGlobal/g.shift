@@ -3,13 +3,20 @@
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "RigidbodyPC.h"
+#include "CoinCounterC.h"
 #include "Scene.h"
 
 #include <json.h>
 
+void CollectableEC::destroy() {
+    setActive(false);
+    scene->getComponentsManager()->eraseEC(this);
+}
+
 void CollectableEC::checkEvent() {
     if (reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"))
             ->collidesWith("Player")) {
+        reinterpret_cast<CoinCounterC*>(scene->getEntitybyId("GameManager")->getComponent("CoinCounterC"))->pickCoin();
         scene->deleteEntity(father);
     }
 }

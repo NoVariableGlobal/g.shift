@@ -35,6 +35,17 @@
       ]
     },
     {
+      "id": "GameManager",
+      "components":[
+        {
+          "type": "CoinCounterC",
+          "attributes":{
+            "totalCoins": 1
+          }
+        }
+      ]
+    },
+    {
       "id": "Player",
       "components": [
         {

@@ -14,6 +14,8 @@ class CollectableEC : public EventComponent {
       CollectableEC() = default;
     ~CollectableEC() = default;
 
+    virtual void destroy();
+
     virtual void checkEvent();
 
     // get the value of the collectable
