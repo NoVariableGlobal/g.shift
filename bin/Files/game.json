@@ -19,7 +19,7 @@
           "attributes": {
             "node": "nCamera",
             "viewportColour": [ 0.1, 0.1, 0.1 ],
-            "offset": [ 0, 0, 5000 ],
+            "offset": [ 0, 0, 1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "Player",
             "follow": [ false, true, false ]
@@ -42,7 +42,7 @@
         {
           "type": "CoinCounterC",
           "attributes": {
-            "totalCoins": 1
+            "totalCoins": 36
           }
         },
         {
@@ -75,7 +75,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 1000, 12000, 0 ],
+            "position": [ 0, 1000, 0 ],
             "shape": [ 25, 25, 25 ],
             "mass": 1,
             "gravity": [ -50, 0, 0 ],
@@ -103,8 +103,9 @@
       ]
     },
     // Coins
+    // First Segment of the Game
     {
-      "id": "Coin",
+      "id": "FirstSegmentCoin1",
       "tag": "Coin",
       "components": [
         {
@@ -127,7 +128,1555 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 300, 0 ],
+            "position": [ 0, 1300, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin2",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 1500, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin3",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 2100, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin4",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 2400, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin5",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -250, 2400, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin6",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 2800, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin7",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -250, 2800, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin8",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 3250, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin9",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 3600, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin10",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -250, 3600, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin11",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 4100, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin12",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -250, 4100, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin13",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -200, 4800, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin14",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 450, 4800, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin15",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 5500, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin16",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -250, 5500, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin17",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -250, 6050, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin18",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 6200, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin19",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 6500, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin20",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -225, 6900, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin21",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -250, 7300, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin22",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 7300, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin23",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -275, 8150, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin24",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 200, 8150, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin25",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 150, 8750, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin26",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -270, 9400, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin27",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 9300, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin28",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -325, 10000, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin29",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 9900, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin30",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -300, 10800, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin31",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 10600, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin32",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -275, 11100, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin33",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 275, 11100, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin34",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -275, 11700, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin35",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 275, 11700, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin36",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 12500, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentCoin37",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 12800, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -157,7 +1706,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 20, 1 ]
+            "scale": [ 2, 12, 1 ]
           }
         },
         {
@@ -171,8 +1720,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -500, 1000, 0 ],
-            "shape": [ 100, 1000, 50 ],
+            "position": [ -500, 1500, 0 ],
+            "shape": [ 100, 600, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -192,7 +1741,7 @@
           "attributes": {
             "position": [ -10, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 20, 1 ]
+            "scale": [ 2, 12, 1 ]
           }
         },
         {
@@ -206,8 +1755,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 500, 1000, 0 ],
-            "shape": [ 100, 1000, 50 ],
+            "position": [ 500, 1500, 0 ],
+            "shape": [ 100, 600, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -1193,7 +2742,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 50, 1600, 0 ],
+            "position": [ 50, 1800, 0 ],
             "shape": [ 50, 150, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -1228,7 +2777,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -50, 1600, 0 ],
+            "position": [ -50, 1800, 0 ],
             "shape": [ 50, 150, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -3300,7 +4849,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 800, 0 ],
+            "position": [ 375, 1400, 0 ],
             "shape": [ 25, 100, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -3340,7 +4889,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 1000, 0 ],
+            "position": [ -375, 1600, 0 ],
             "shape": [ 25, 100, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -3380,7 +4929,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 1600, 0 ],
+            "position": [ 125, 1800, 0 ],
             "shape": [ 25, 150, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -3420,7 +4969,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 1600, 0 ],
+            "position": [ -125, 1800, 0 ],
             "shape": [ 25, 150, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
