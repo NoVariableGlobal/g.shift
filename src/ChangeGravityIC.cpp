@@ -29,14 +29,7 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
 			: Ogre::Vector3(-speed, 0.0f, 0.0f));
 
 		Ogre::Vector3 velocity = body->getLinearVelocity();
-		if (velocity.y <= 0.0f) {
-			ConstantMovementC* constantMovement = dynamic_cast<ConstantMovementC*>(father->getComponent("ConstantMovementC"));
-
-			body->setLinearVelocity(Ogre::Vector3(0.0f, constantMovement->getSpeed(), 0.0f));
-		}
-		else {
-			body->setLinearVelocity(Ogre::Vector3(0.0f, velocity.y, 0.0f));
-		}
+		body->setLinearVelocity(Ogre::Vector3(0.0f, velocity.y, 0.0f));
 
 		dynamic_cast<TridimensionalObjectRC*>(
 			father->getComponent("TridimensionalObjectRC"))
