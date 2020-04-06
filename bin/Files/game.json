@@ -1,5 +1,4 @@
 {
-
   "entities": [
 
     // Game Camera
@@ -19,7 +18,7 @@
           "attributes": {
             "node": "nCamera",
             "viewportColour": [ 0.1, 0.1, 0.1 ],
-            "offset": [ 0, 0, 1000 ],
+            "offset": [ 0, 0, 7000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "Player",
             "follow": [ false, true, false ]
@@ -51,7 +50,7 @@
         }
       ]
     },
-    // Player Character
+    // Player Character CAMBIAR A 50 y 50
     {
       "id": "Player",
       "components": [
@@ -75,7 +74,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 1000, 0 ],
+            "position": [ 1000, 0, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ -50, 0, 0 ],
@@ -1662,7 +1661,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 12, 1 ]
+            "scale": [ 2, 18, 1 ]
           }
         },
         {
@@ -1676,8 +1675,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -500, 1500, 0 ],
-            "shape": [ 100, 600, 50 ],
+            "position": [ -500, 1200, 0 ],
+            "shape": [ 100, 900, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -1697,7 +1696,7 @@
           "attributes": {
             "position": [ -10, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 12, 1 ]
+            "scale": [ 2, 18, 1 ]
           }
         },
         {
@@ -1711,8 +1710,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 500, 1500, 0 ],
-            "shape": [ 100, 600, 50 ],
+            "position": [ 500, 1200, 0 ],
+            "shape": [ 100, 900, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4135,7 +4134,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 50, 106600, 0 ],
+            "position": [ 50, 10600, 0 ],
             "shape": [ 50, 150, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -4782,7 +4781,7 @@
 
     // SPIKES
     // First Segment of the Game
-    {
+	{
       "id": "FirstSegmentSpike1",
       "tag": "Spike",
       "components": [
@@ -4805,7 +4804,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 1400, 0 ],
+            "position": [ 375, 600, 0 ],
             "shape": [ 25, 100, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -4845,6 +4844,86 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
+            "position": [ -375, 900, 0 ],
+            "shape": [ 25, 100, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },  
+    {
+      "id": "FirstSegmentSpike3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 2, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 375, 1400, 0 ],
+            "shape": [ 25, 100, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentSpike4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 2, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
             "position": [ -375, 1600, 0 ],
             "shape": [ 25, 100, 50 ],
             "mass": 1,
@@ -4863,7 +4942,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike3",
+      "id": "FirstSegmentSpike5",
       "tag": "Spike",
       "components": [
         {
@@ -4903,7 +4982,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike4",
+      "id": "FirstSegmentSpike6",
       "tag": "Spike",
       "components": [
         {
@@ -4943,7 +5022,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike5",
+      "id": "FirstSegmentSpike7",
       "tag": "Spike",
       "components": [
         {
@@ -4983,7 +5062,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike6",
+      "id": "FirstSegmentSpike8",
       "tag": "Spike",
       "components": [
         {
@@ -5023,7 +5102,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike7",
+      "id": "FirstSegmentSpike9",
       "tag": "Spike",
       "components": [
         {
@@ -5063,7 +5142,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike8",
+      "id": "FirstSegmentSpike10",
       "tag": "Spike",
       "components": [
         {
@@ -5103,7 +5182,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike9",
+      "id": "FirstSegmentSpike11",
       "tag": "Spike",
       "components": [
         {
@@ -5143,7 +5222,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike10",
+      "id": "FirstSegmentSpike12",
       "tag": "Spike",
       "components": [
         {
@@ -5183,7 +5262,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike11",
+      "id": "FirstSegmentSpike13",
       "tag": "Spike",
       "components": [
         {
