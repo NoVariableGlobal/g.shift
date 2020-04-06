@@ -75,7 +75,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 1000, 12000, 0 ],
+            "position": [ 0, 1000, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ -50, 0, 0 ],
