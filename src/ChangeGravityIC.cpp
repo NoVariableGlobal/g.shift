@@ -7,7 +7,6 @@
 #include "RigidbodyPC.h"
 #include "Scene.h"
 #include "TridimensionalObjectRC.h"
-#include "OutOfBoundsEC.h"
 
 #include <iostream>
 #include <json.h>

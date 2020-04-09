@@ -18,7 +18,7 @@
           "attributes": {
             "node": "nCamera",
             "viewportColour": [ 0.1, 0.1, 0.1 ],
-            "offset": [ 0, 0, 5000 ],
+            "offset": [ 0, 0, 1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "Player",
             "follow": [ false, true, false ]
@@ -74,7 +74,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 5000, -600, 0 ],
+            "position": [ 0, -1000, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ -50, 0, 0 ],
@@ -97,6 +97,13 @@
           "type": "ConstantMovementC",
           "attributes": {
             "speed": 200
+          }
+        },
+        {
+          "type": "OutOfBoundsEC",
+          "attributes": {
+            "LeftBorder": -650, // This value is the "real" border of the game
+            "RightBorder":  650 // This value is the "real" border of the game
           }
         }
       ]
