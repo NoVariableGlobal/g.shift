@@ -1,18 +1,16 @@
 #include "ChangeGravityIC.h"
 #include "ComponentsManager.h"
+#include "ConstantMovementC.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
+#include "OgreRoot.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
 #include "TridimensionalObjectRC.h"
-
-#include "ConstantMovementC.h"
-
-#include "OgreRoot.h"
-
-#include <json.h>
+#include "OutOfBoundsEC.h"
 
 #include <iostream>
+#include <json.h>
 
 ChangeGravityIC::ChangeGravityIC() {}
 
@@ -35,6 +33,12 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
         dynamic_cast<TridimensionalObjectRC*>(
             father->getComponent("TridimensionalObjectRC"))
             ->setMaterial(!movingIzq ? mRight : mLeft);
+    }
+    if (_event.type == SDL_KEYDOWN && _event.key.keysym.sym == SDLK_a) {
+        RigidbodyPC* body =
+            dynamic_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"));
+
+        body->setLinearVelocity(Ogre::Vector3(0.0f, 0.0f, 0.0f));
     }
 }
 
