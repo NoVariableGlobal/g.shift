@@ -74,7 +74,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, -1000, 0 ],
+            "position": [ 0, -1500, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ -50, 0, 0 ],
@@ -103,7 +103,7 @@
           "type": "OutOfBoundsEC",
           "attributes": {
             "LeftBorder": -650, // This value is the "real" border of the game
-            "RightBorder":  650 // This value is the "real" border of the game
+            "RightBorder": 650 // This value is the "real" border of the game
           }
         }
       ]
@@ -4754,7 +4754,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 300, 12800, 0 ],
+            "position": [ 300, 12900, 0 ],
             "shape": [ 100, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -4789,7 +4789,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -300, 12800, 0 ],
+            "position": [ -300, 12900, 0 ],
             "shape": [ 100, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -6517,6 +6517,126 @@
         }
       ]
     },
+    {
+      "id": "SecondSegmentSpike25",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 130, 6100, 0 ],
+            "shape": [ 50, 25, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "SecondSegmentSpike26",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -130, 6100, 0 ],
+            "shape": [ 50, 25, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "SecondSegmentSpike27",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 3, 0.25, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 7275, 0 ],
+            "shape": [ 150, 12.5, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
     // Third Segment of the Game
     {
       "id": "ThirdSegmentSpike1",
@@ -7263,6 +7383,86 @@
           "attributes": {
             "position": [ -225, 10700, 0 ],
             "shape": [ 25, 50, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpike20",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 2, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 300, 8750, 0 ],
+            "shape": [ 100, 25, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpike21",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 2, 0.25, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 10112.5, 0 ],
+            "shape": [ 100, 12.5, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
