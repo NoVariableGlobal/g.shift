@@ -41,7 +41,7 @@
         {
           "type": "CoinCounterC",
           "attributes": {
-            "totalCoins": 33
+            "totalCoins": 32
           }
         },
         {
@@ -220,7 +220,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -275, -300, 0 ],
+            "position": [ -275, -280, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -306,7 +306,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -275, 500, 0 ],
+            "position": [ -275, 600, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1360,7 +1360,7 @@
         }
       ]
     },
-    // Fourth Segment of the Game (4)
+    // Fourth Segment of the Game (3)
     {
       "id": "FourthSegmentCoin1",
       "tag": "Coin",
@@ -1471,50 +1471,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 12500, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FourthSegmentCoin4",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 0, 12800, 0 ],
+            "position": [ 0, 12900, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -2791,7 +2748,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -75, 3400, 0 ],
+            "position": [ -200, 3400, 0 ],
             "shape": [ 75, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -2826,7 +2783,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 75, 3400, 0 ],
+            "position": [ 200, 3400, 0 ],
             "shape": [ 75, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -3198,7 +3155,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 0.5, 1 ]
+            "scale": [ 0.5, 0.5, 1 ]
           }
         },
         {
@@ -3212,8 +3169,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -75, 7300, 0 ],
-            "shape": [ 75, 25, 50 ],
+            "position": [ -25, 7300, 0 ],
+            "shape": [ 25, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3233,7 +3190,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 0.5, 1 ]
+            "scale": [ 0.5, 0.5, 1 ]
           }
         },
         {
@@ -3247,8 +3204,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 75, 7300, 0 ],
-            "shape": [ 75, 25, 50 ],
+            "position": [ 25, 7300, 0 ],
+            "shape": [ 25, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3514,7 +3471,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ]
+            "scale": [ 0.5, 1, 1 ]
           }
         },
         {
@@ -3529,7 +3486,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 150, 8300, 0 ],
-            "shape": [ 50, 50, 50 ],
+            "shape": [ 25, 50, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3549,7 +3506,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ]
+            "scale": [ 0.5, 1, 1 ]
           }
         },
         {
@@ -3564,7 +3521,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 150, 8000, 0 ],
-            "shape": [ 50, 50, 50 ],
+            "shape": [ 25, 50, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6606,7 +6563,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 3, 0.25, 1 ]
+            "scale": [ 1, 0.25, 1 ]
           }
         },
         {
@@ -6621,7 +6578,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 7275, 0 ],
-            "shape": [ 150, 12.5, 50 ],
+            "shape": [ 50, 12.5, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,

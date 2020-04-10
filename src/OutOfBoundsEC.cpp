@@ -3,9 +3,9 @@
 #include "DeathControllerC.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
+#include "OgreRoot.h"
 #include "Scene.h"
 #include "TransformComponent.h"
-#include "OgreRoot.h"
 
 #include <json.h>
 
@@ -13,7 +13,8 @@ void OutOfBoundsEC::checkEvent() {
     TransformComponent* transform = dynamic_cast<TransformComponent*>(
         scene->getEntitybyId("Player")->getComponent("TransformComponent"));
 
-    if (transform->getPosition().x > rightBorder || transform->getPosition().x < leftBorder) {
+    if (transform->getPosition().x > rightBorder ||
+        transform->getPosition().x < leftBorder) {
         reinterpret_cast<DeathControllerC*>(
             scene->getEntitybyId("Player")->getComponent("DeathControllerC"))
             ->playerDeath();
