@@ -3,10 +3,10 @@
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "Factory.h"
+#include "OgreRoot.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
 #include <iostream>
-#include "OgreRoot.h"
 #include <json.h>
 
 DeathStopEC::DeathStopEC() {}
@@ -17,7 +17,7 @@ void DeathStopEC::checkEvent() {
     Entity* player = scene->getEntitybyId("Player");
     auto rigid =
         reinterpret_cast<RigidbodyPC*>(player->getComponent("RigidbodyPC"));
-    if (rigid->getLinearVelocity().y <= 0 )
+    if (rigid->getLinearVelocity().y <= 0)
         playerDeath();
 }
 
