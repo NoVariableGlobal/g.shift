@@ -111,14 +111,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -127,7 +127,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 1300, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -154,14 +154,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -170,7 +170,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 2200, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -197,14 +197,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -213,7 +213,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 2400, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -240,14 +240,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -256,7 +256,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -250, 2400, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -283,14 +283,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -299,7 +299,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 2800, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -326,14 +326,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -342,7 +342,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -250, 2800, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -369,14 +369,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -385,7 +385,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 3250, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -412,14 +412,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -428,7 +428,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 3600, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -455,14 +455,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -471,7 +471,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -250, 3600, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -498,14 +498,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -514,7 +514,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 4100, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -541,14 +541,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -557,7 +557,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -250, 4100, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -584,14 +584,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -600,7 +600,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -200, 4800, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -627,14 +627,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -643,7 +643,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 450, 4800, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -670,14 +670,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -686,7 +686,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 5500, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -713,14 +713,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -729,7 +729,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -250, 5500, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -756,14 +756,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -772,7 +772,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -250, 6050, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -799,14 +799,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -815,7 +815,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 6200, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -842,14 +842,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -858,7 +858,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 6500, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -885,14 +885,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -901,7 +901,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -225, 6900, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -928,14 +928,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -944,7 +944,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -250, 7300, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -971,14 +971,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -987,7 +987,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 7300, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1014,14 +1014,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1030,7 +1030,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -275, 8150, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1057,14 +1057,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1073,7 +1073,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 200, 8150, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1100,14 +1100,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1116,7 +1116,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 150, 8750, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1143,14 +1143,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1159,7 +1159,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -270, 9400, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1186,14 +1186,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1202,7 +1202,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 9300, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1229,14 +1229,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1245,7 +1245,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -325, 10000, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1272,14 +1272,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1288,7 +1288,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 9900, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1315,14 +1315,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1331,7 +1331,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -300, 10800, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1358,14 +1358,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 50, 50, 50 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1374,7 +1374,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 10600, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1408,7 +1408,7 @@
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1417,7 +1417,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -275, 11100, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1451,7 +1451,7 @@
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1460,7 +1460,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 275, 11100, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1494,7 +1494,7 @@
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1503,7 +1503,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -275, 11700, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1537,7 +1537,7 @@
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1546,7 +1546,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 275, 11700, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1580,7 +1580,7 @@
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1589,7 +1589,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 12500, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1623,7 +1623,7 @@
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "OrangeColourMaterial"
           }
@@ -1632,7 +1632,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 12800, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
