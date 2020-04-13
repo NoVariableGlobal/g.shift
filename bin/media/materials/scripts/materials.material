@@ -109,3 +109,19 @@ material EnemyBulletMaterial
         }
     }
 }
+
+material CoinMaterial
+{
+    technique 
+    {
+        diffuse 0.00 0.00 0.00 1.00
+
+        pass 
+        {
+            texture_unit 
+            {
+                texture CoinTexture.jpg
+            }
+        }
+    }
+}

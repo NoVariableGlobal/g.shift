@@ -120,7 +120,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -163,7 +163,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -206,7 +206,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -249,7 +249,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -292,7 +292,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -335,7 +335,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -378,7 +378,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -421,7 +421,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -464,7 +464,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -507,7 +507,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -550,7 +550,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -593,7 +593,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -636,7 +636,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -679,7 +679,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -722,7 +722,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -765,7 +765,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -808,7 +808,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -851,7 +851,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -894,7 +894,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -937,7 +937,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -980,7 +980,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1023,7 +1023,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1066,7 +1066,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1109,7 +1109,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1152,7 +1152,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1195,7 +1195,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1238,7 +1238,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1281,7 +1281,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1324,7 +1324,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1367,7 +1367,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1410,7 +1410,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1453,7 +1453,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1496,7 +1496,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1539,7 +1539,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1582,7 +1582,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1625,7 +1625,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -2652,7 +2652,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
