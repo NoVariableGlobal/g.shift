@@ -54,7 +54,7 @@
         }
       ]
     },
-    // Player Character CAMBIAR A 50 y 50
+    // Player Character
     {
       "id": "Player",
       "components": [
@@ -1505,7 +1505,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 18, 1 ]
+            "scale": [ 2, 22, 1 ]
           }
         },
         {
@@ -1519,8 +1519,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -500, -600, 0 ],
-            "shape": [ 100, 900, 50 ],
+            "position": [ -500, -800, 0 ],
+            "shape": [ 100, 1100, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -1540,7 +1540,7 @@
           "attributes": {
             "position": [ -10, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 18, 1 ]
+            "scale": [ 2, 22, 1 ]
           }
         },
         {
@@ -1554,8 +1554,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 500, -600, 0 ],
-            "shape": [ 100, 900, 50 ],
+            "position": [ 500, -800, 0 ],
+            "shape": [ 100, 1100, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
