@@ -10,7 +10,7 @@
 #include <json.h>
 
 void OutOfBoundsEC::checkEvent() {
-    TransformComponent* transform = dynamic_cast<TransformComponent*>(
+    TransformComponent* transform = reinterpret_cast<TransformComponent*>(
         scene->getEntitybyId("Player")->getComponent("TransformComponent"));
 
     if (transform->getPosition().x > rightBorder ||
