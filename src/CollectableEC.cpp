@@ -33,7 +33,7 @@ void CollectableEC::setAnimations() {
         reinterpret_cast<AnimationLC*>(father->getComponent("AnimationLC"));
 }
 
-void CollectableEC::playAnimation() {} // animations->startAnimation("idle"); }
+void CollectableEC::playAnimation() { animations->startAnimation("idle"); }
 
 // FACTORY INFRASTRUCTURE
 CollectableECFactory::CollectableECFactory() = default;
