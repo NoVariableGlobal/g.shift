@@ -136,6 +136,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, -1100, 0 ],
@@ -176,6 +187,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -222,6 +244,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -275, -280, 0 ],
@@ -262,6 +295,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -308,6 +352,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -275, 600, 0 ],
@@ -348,6 +403,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -395,6 +461,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 1300, 0 ],
@@ -435,6 +512,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -481,6 +569,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 2200, 0 ],
@@ -521,6 +620,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -567,6 +677,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -225, 3000, 0 ],
@@ -607,6 +728,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -653,6 +785,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 300, 4100, 0 ],
@@ -685,6 +828,17 @@
             "orientation": [ 0, 0, 0 ],
             "scale": [ 25, 25, 25 ]
 
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -740,6 +894,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 4300, 0 ],
@@ -780,6 +945,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -826,6 +1002,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 5200, 0 ],
@@ -866,6 +1053,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -912,6 +1110,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 6100, 0 ],
@@ -952,6 +1161,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -998,6 +1218,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -50, 7100, 0 ],
@@ -1038,6 +1269,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1085,6 +1327,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 200, 8150, 0 ],
@@ -1125,6 +1378,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1171,6 +1435,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 275, 9300, 0 ],
@@ -1211,6 +1486,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1257,6 +1543,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 75, 10150, 0 ],
@@ -1300,6 +1597,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -250, 10400, 0 ],
@@ -1340,6 +1648,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1387,6 +1706,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -275, 11100, 0 ],
@@ -1430,6 +1760,17 @@
           }
         },
         {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -275, 11700, 0 ],
@@ -1470,6 +1811,17 @@
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
             "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
