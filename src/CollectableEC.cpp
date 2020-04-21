@@ -1,11 +1,11 @@
 #include "CollectableEC.h"
+#include "AnimationLC.h"
 #include "CoinCounterC.h"
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
-#include "AnimationLC.h"
 
 #include <json.h>
 
@@ -52,7 +52,7 @@ Component* CollectableECFactory::create(Entity* _father, Json::Value& _data,
 
     collectable->setActive(true);
 
-	collectable->setAnimations();
+    collectable->setAnimations();
     collectable->playAnimation();
 
     return collectable;

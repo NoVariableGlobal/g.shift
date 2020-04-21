@@ -831,6 +831,14 @@
           }
         },
         {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "gshift_coin.mesh",
+            "node": "nCoin",
+            "material": "CoinMaterial"
+          }
+        },
+        {
           "type": "AnimationLC",
           "attributes": {
             "animations": [
@@ -839,14 +847,6 @@
                 "loop": true
               }
             ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "gshift_coin.mesh",
-            "node": "nCoin",
-            "material": "CoinMaterial"
           }
         },
         {
