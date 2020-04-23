@@ -11,7 +11,7 @@ class CollectableEC : public EventComponent {
     // value of the collectable
     int value_;
 
-	AnimationLC* animations = nullptr;
+    AnimationLC* animations = nullptr;
 
   public:
     CollectableEC() = default;
@@ -26,9 +26,9 @@ class CollectableEC : public EventComponent {
     // set the value of the collectable
     void setValue(int value);
 
-	// set animations from father AnimationLC
-	void setAnimations();
+    // set animations from father AnimationLC
+    void setAnimations();
 
-	// play idle animation
+    // play idle animation
     void playAnimation();
 };

@@ -48,7 +48,7 @@
           "type": "DeathControllerC",
           "attributes": {}
         },
-		{
+        {
           "type": "DeathStopEC",
           "attributes": {}
         }
@@ -132,7 +132,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -186,7 +186,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -240,7 +240,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -294,7 +294,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -348,7 +348,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -402,7 +402,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -457,7 +457,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -511,7 +511,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -565,7 +565,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -619,7 +619,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -673,7 +673,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -727,7 +727,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -781,7 +781,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -835,7 +835,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -890,7 +890,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -944,7 +944,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -998,7 +998,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1052,7 +1052,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1106,7 +1106,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1160,7 +1160,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1214,7 +1214,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1268,7 +1268,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1323,7 +1323,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1377,7 +1377,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1431,7 +1431,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1485,7 +1485,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1539,7 +1539,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1593,7 +1593,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1647,7 +1647,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1702,7 +1702,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1756,7 +1756,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -1810,7 +1810,7 @@
           "attributes": {
             "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
@@ -2919,7 +2919,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "CoinMaterial1"
+            "material": "CoinMaterial"
           }
         },
         {
