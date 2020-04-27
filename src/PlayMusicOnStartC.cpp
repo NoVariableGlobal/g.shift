@@ -18,7 +18,13 @@ void PlayMusicOnStartC::destroy() {
 }
 
 void PlayMusicOnStartC::setMusic(std::string sound) { 
+    if (music != "")
+        dynamic_cast<SoundComponent*>(father->getComponent("SoundComponent"))
+            ->stopSound(music);
+
     music = sound;
+    dynamic_cast<SoundComponent*>(father->getComponent("SoundComponent"))
+        ->playSound(music);
 }
 
 // FACTORY INFRASTRUCTURE DEFINITION

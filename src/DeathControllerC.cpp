@@ -4,10 +4,9 @@
 #include "FactoriesFactory.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
+#include "PlayMusicOnStartC.h"
 
 #include <json.h>
-
-#include <iostream> // PROVISIONAL
 
 void DeathControllerC::destroy() {
     setActive(false);
@@ -16,7 +15,8 @@ void DeathControllerC::destroy() {
 
 void DeathControllerC::playerDeath() {
     scene->changeScene("DeadMenu");
-    std::cout << "\n PLAYER DEAD \n"; // PROVISIONAL
+    dynamic_cast<PlayMusicOnStartC*>(father->getComponent("PlayMusicOnStartC"))
+        ->setMusic("menuMusic");
 }
 
 // FACTORY INFRASTRUCTURE

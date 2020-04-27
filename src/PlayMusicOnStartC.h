@@ -10,7 +10,7 @@ DECLARE_FACTORY(PlayMusicOnStartC);
 
 class PlayMusicOnStartC : public Component {
   private:
-    std::string music;
+    std::string music = "";
 
   public:
     PlayMusicOnStartC() = default;
