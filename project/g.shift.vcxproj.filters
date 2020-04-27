@@ -39,7 +39,10 @@
     <ClCompile Include="..\src\OutOfBoundsEC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\DeathStop.cpp">
+    <ClCompile Include="..\src\SkyPlaneObjectC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DeathStopEC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,7 +68,10 @@
     <ClInclude Include="..\src\OutOfBoundsEC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\DeathStop.h">
+    <ClInclude Include="..\src\SkyPlaneObjectC.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DeathStopEC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

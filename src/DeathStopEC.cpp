@@ -1,4 +1,4 @@
-#include "DeathStop.h"
+#include "DeathStopEC.h"
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"

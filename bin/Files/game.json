@@ -23,13 +23,34 @@
             "targetId": "Player",
             "follow": [ false, true, false ]
           }
-        },
+        }
+      ]
+    },
+    // Game Light
+    {
+      "id": "Light",
+      "components": [
         {
           "type": "SpotLightRC",
           "attributes": {
             "node": "nSpotLight",
             "colour": [ 1, 1, 1 ],
             "direction": [ 0, -1, -1 ]
+          }
+        }
+      ]
+    },
+    // Game Background
+    {
+      "id": "Background",
+      "components": [
+        {
+          "type": "SkyPlaneObjectC",
+          "attributes": {
+            "normal": "Z",
+            "distance": -100,
+            "bow": 0.0,
+            "material": "BackgroundTexture"
           }
         }
       ]
