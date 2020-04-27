@@ -99,7 +99,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nPlayer",
-            "material": "PinkColourMaterial"
+            "material": "PurpleColourMaterial"
           }
         },
         {
@@ -119,9 +119,7 @@
         {
           "type": "ChangeGravityIC",
           "attributes": {
-            "speed": 250,
-            "materialL": "PinkColourMaterial",
-            "materialR": "BlueColourMaterial"
+            "speed": 250
           }
         },
         {

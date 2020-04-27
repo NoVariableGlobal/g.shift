@@ -30,10 +30,6 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
 
         body->setLinearVelocity(Ogre::Vector3(0.0f, velocity.y, 0.0f));
 
-        reinterpret_cast<TridimensionalObjectRC*>(
-            father->getComponent("TridimensionalObjectRC"))
-            ->setMaterial(!movingIzq ? mRight : mLeft);
-
         reinterpret_cast<AmbientLightC*>(
             scene->getEntitybyId("Light")->getComponent("AmbientLightC"))
             ->setColour(!movingIzq ? Ogre::Vector3(0.0f, 0.0f, 1.0f)
@@ -42,12 +38,6 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
 }
 
 void ChangeGravityIC::setSpeed(float _speed) { speed = _speed; }
-
-void ChangeGravityIC::setMaterialLeft(std::string _mLeft) { mLeft = _mLeft; }
-
-void ChangeGravityIC::setMaterialRight(std::string _mRight) {
-    mRight = _mRight;
-}
 
 // FACTORY INFRASTRUCTURE
 
@@ -65,16 +55,6 @@ Component* ChangeGravityICFactory::create(Entity* _father, Json::Value& _data,
         throw std::exception("ChangeGravityIC: speed is not a double");
 
     changeGravity->setSpeed(_data["speed"].asDouble());
-
-    if (!_data["materialL"].isString())
-        throw std::exception("ChangeGravityIC: materialL is not a string");
-
-    changeGravity->setMaterialLeft(_data["materialL"].asString());
-
-    if (!_data["materialR"].isString())
-        throw std::exception("ChangeGravityIC: materialR is not a string");
-
-    changeGravity->setMaterialRight(_data["materialR"].asString());
 
     return changeGravity;
 };
