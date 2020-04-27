@@ -50,8 +50,8 @@ SkyPlaneObjectCFactory::SkyPlaneObjectCFactory() = default;
 
 Component* SkyPlaneObjectCFactory::create(Entity* _father, Json::Value& _data,
                                           Scene* _scene) {
-    Ogre::SceneManager* mSM = OgreSDLContext::getInstance()->getSceneManager();
     SkyPlaneObjectC* planeObject = new SkyPlaneObjectC();
+
     _scene->getComponentsManager()->addDC(planeObject);
 
     planeObject->setFather(_father);

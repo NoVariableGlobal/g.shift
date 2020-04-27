@@ -7,7 +7,7 @@
 #include "RigidbodyPC.h"
 #include "Scene.h"
 #include "TridimensionalObjectRC.h"
-#include "SpotLightRC.h"
+#include "AmbientLightC.h"
 
 #include <iostream>
 #include <json.h>
@@ -34,8 +34,8 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
             father->getComponent("TridimensionalObjectRC"))
             ->setMaterial(!movingIzq ? mRight : mLeft);
 
-        reinterpret_cast<SpotLightRC*>(
-            scene->getEntitybyId("Light")->getComponent("SpotLightRC"))
+        reinterpret_cast<AmbientLightC*>(
+            scene->getEntitybyId("Light")->getComponent("AmbientLightC"))
             ->setColour(!movingIzq ? Ogre::Vector3(0.0f, 0.0f, 1.0f)
                                    : Ogre::Vector3(0.5f, 0.0f, 0.5f));
     }

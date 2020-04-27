@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\AmbientLightC.cpp" />
     <ClCompile Include="..\src\ChangeGravityIC.cpp" />
     <ClCompile Include="..\src\CoinCounterC.cpp" />
     <ClCompile Include="..\src\CollectableEC.cpp" />
@@ -31,6 +32,7 @@
     <ClCompile Include="..\src\SpikeEC.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\AmbientLightC.h" />
     <ClInclude Include="..\src\ChangeGravityIC.h" />
     <ClInclude Include="..\src\CoinCounterC.h" />
     <ClInclude Include="..\src\CollectableEC.h" />

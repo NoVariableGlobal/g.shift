@@ -31,6 +31,12 @@
       "id": "Light",
       "components": [
         {
+          "type": "AmbientLightC",
+          "attributes": {
+            "colour": [ 0.2, 0.2, 0.2 ]
+          }
+        },
+        {
           "type": "SpotLightRC",
           "attributes": {
             "node": "nSpotLight",
