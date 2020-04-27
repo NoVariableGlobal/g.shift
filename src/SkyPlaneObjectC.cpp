@@ -16,6 +16,11 @@ void SkyPlaneObjectC::destroy() {
     scene->getComponentsManager()->eraseDC(this);
 }
 
+void SkyPlaneObjectC::setActive(bool _active) {
+    active = _active;
+    OgreSDLContext::getInstance()->getSceneManager()->setSkyPlaneEnabled(active);
+}
+
 void SkyPlaneObjectC::CreateSkyPlane(std::string normal, float distance,
                                      float bow, std::string material) {
     Ogre::Vector3 n;

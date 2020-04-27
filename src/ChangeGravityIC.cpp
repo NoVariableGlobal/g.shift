@@ -7,6 +7,7 @@
 #include "RigidbodyPC.h"
 #include "Scene.h"
 #include "TridimensionalObjectRC.h"
+#include "SpotLightRC.h"
 
 #include <iostream>
 #include <json.h>
@@ -20,7 +21,7 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
         movingIzq = !movingIzq;
 
         RigidbodyPC* body =
-            dynamic_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"));
+            reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"));
 
         body->setGravity(!movingIzq ? Ogre::Vector3(speed, 0.0f, 0.0f)
                                     : Ogre::Vector3(-speed, 0.0f, 0.0f));
@@ -29,9 +30,14 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
 
         body->setLinearVelocity(Ogre::Vector3(0.0f, velocity.y, 0.0f));
 
-        dynamic_cast<TridimensionalObjectRC*>(
+        reinterpret_cast<TridimensionalObjectRC*>(
             father->getComponent("TridimensionalObjectRC"))
             ->setMaterial(!movingIzq ? mRight : mLeft);
+
+        reinterpret_cast<SpotLightRC*>(
+            scene->getEntitybyId("Light")->getComponent("SpotLightRC"))
+            ->setColour(!movingIzq ? Ogre::Vector3(0.0f, 0.0f, 1.0f)
+                                   : Ogre::Vector3(0.5f, 0.0f, 0.5f));
     }
 }
 
