@@ -21,7 +21,7 @@ void SkyPlaneObjectC::setActive(bool _active) {
     OgreSDLContext::getInstance()->getSceneManager()->setSkyPlaneEnabled(active);
 }
 
-void SkyPlaneObjectC::CreateSkyPlane(std::string normal, float distance,
+void SkyPlaneObjectC::setSkyPlane(std::string normal, float distance,
                                      float bow, std::string material) {
     Ogre::Vector3 n;
     if (normal == "X")
@@ -69,7 +69,7 @@ Component* SkyPlaneObjectCFactory::create(Entity* _father, Json::Value& _data,
     if (!_data["material"].isString())
         throw std::exception("SkyPlaneObjectRC: material is not a string");
 
-    planeObject->CreateSkyPlane(
+    planeObject->setSkyPlane(
         _data["normal"].asString(), _data["distance"].asDouble(),
         _data["bow"].asDouble(), _data["material"].asString());
 

@@ -19,6 +19,6 @@ class SkyPlaneObjectC : public Component {
     virtual void setActive(bool active);
 
     // Sets a given material to the object
-    void CreateSkyPlane(std::string normal, float distance, float bow,
+    void setSkyPlane(std::string normal, float distance, float bow,
                         std::string material);
 };

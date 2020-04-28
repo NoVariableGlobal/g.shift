@@ -20,7 +20,7 @@ class AmbientLightC : public Component {
 
   public:
     AmbientLightC();
-    virtual ~AmbientLightC() = default;
+    virtual ~AmbientLightC();
 
     virtual void destroy();
 

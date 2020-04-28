@@ -18,7 +18,7 @@ material BackgroundTexture
             texture_unit texture1 
             { // * ‐> int 1
                 // archivo
-                texture spaceSky.jpg 2d 
+                texture background.png 2d 
                 // sólo configuración
                 tex_address_mode wrap 
                 

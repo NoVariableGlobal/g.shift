@@ -11,6 +11,8 @@
 
 AmbientLightC::AmbientLightC() { currentColour = new Ogre::Vector3(); }
 
+AmbientLightC::~AmbientLightC() { delete currentColour; }
+
 // COMPONENT CODE
 void AmbientLightC::destroy() {
     setActive(false);
