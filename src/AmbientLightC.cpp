@@ -23,11 +23,11 @@ void AmbientLightC::setActive(bool _active) {
     active = _active;
     if (active)
         OgreSDLContext::getInstance()->getSceneManager()->setAmbientLight(
-            Ogre::ColourValue(currentColour->x, currentColour->y, currentColour->z,
-                              1.0));
+            Ogre::ColourValue(currentColour->x, currentColour->y,
+                              currentColour->z, 1.0));
     else
-        OgreSDLContext::getInstance()
-            ->getSceneManager()->setAmbientLight(Ogre::ColourValue(0.0, 0.0, 0.0, 0.0));
+        OgreSDLContext::getInstance()->getSceneManager()->setAmbientLight(
+            Ogre::ColourValue(0.0, 0.0, 0.0, 0.0));
 }
 
 void AmbientLightC::setColour(Ogre::Vector3 colour) {
@@ -43,7 +43,7 @@ void AmbientLightC::setColour(Ogre::Vector3 colour) {
 AmbientLightCFactory::AmbientLightCFactory() = default;
 
 Component* AmbientLightCFactory::create(Entity* _father, Json::Value& _data,
-                                          Scene* _scene) {
+                                        Scene* _scene) {
     AmbientLightC* ambientLight = new AmbientLightC();
 
     _scene->getComponentsManager()->addDC(ambientLight);
@@ -54,7 +54,8 @@ Component* AmbientLightCFactory::create(Entity* _father, Json::Value& _data,
     if (!_data["colour"].isArray())
         throw std::exception("SkyPlaneObjectRC: colour is not an array");
     if (!_data["colour"][0].isDouble())
-        throw std::exception("SkyPlaneObjectRC: colour is not an array of doubles");
+        throw std::exception(
+            "SkyPlaneObjectRC: colour is not an array of doubles");
 
     ambientLight->setColour(Ogre::Vector3(_data["colour"][0].asFloat(),
                                           _data["colour"][1].asFloat(),

@@ -1,4 +1,5 @@
 #include "ChangeGravityIC.h"
+#include "AmbientLightC.h"
 #include "ComponentsManager.h"
 #include "ConstantMovementC.h"
 #include "Entity.h"
@@ -7,7 +8,6 @@
 #include "RigidbodyPC.h"
 #include "Scene.h"
 #include "TridimensionalObjectRC.h"
-#include "AmbientLightC.h"
 
 #include <iostream>
 #include <json.h>

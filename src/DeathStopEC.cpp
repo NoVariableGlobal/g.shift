@@ -1,5 +1,6 @@
 #include "DeathStopEC.h"
 #include "ComponentsManager.h"
+#include "DeathControllerC.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "Factory.h"
@@ -18,17 +19,15 @@ void DeathStopEC::checkEvent() {
     auto rigid =
         reinterpret_cast<RigidbodyPC*>(player->getComponent("RigidbodyPC"));
     if (rigid->getLinearVelocity().y <= 0)
-        playerDeath();
+        reinterpret_cast<DeathControllerC*>(
+            scene->getEntitybyId("GameManager")
+                ->getComponent("DeathControllerC"))
+            ->playerDeath();
 }
 
 void DeathStopEC::destroy() {
     setActive(false);
     scene->getComponentsManager()->eraseEC(this);
-}
-
-void DeathStopEC::playerDeath() {
-    scene->changeScene("DeadMenu");
-    std::cout << "\n PLAYER DEAD \n"; // PROVISIONAL
 }
 
 DeathStopECFactory::DeathStopECFactory() = default;

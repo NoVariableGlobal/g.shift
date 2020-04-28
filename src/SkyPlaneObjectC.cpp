@@ -18,11 +18,12 @@ void SkyPlaneObjectC::destroy() {
 
 void SkyPlaneObjectC::setActive(bool _active) {
     active = _active;
-    OgreSDLContext::getInstance()->getSceneManager()->setSkyPlaneEnabled(active);
+    OgreSDLContext::getInstance()->getSceneManager()->setSkyPlaneEnabled(
+        active);
 }
 
-void SkyPlaneObjectC::setSkyPlane(std::string normal, float distance,
-                                     float bow, std::string material) {
+void SkyPlaneObjectC::setSkyPlane(std::string normal, float distance, float bow,
+                                  std::string material) {
     Ogre::Vector3 n;
     if (normal == "X")
         n = Ogre::Vector3::UNIT_X;

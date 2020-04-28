@@ -10,5 +10,4 @@ class DeathStopEC : public EventComponent {
     ~DeathStopEC();
     virtual void checkEvent();
     virtual void destroy();
-    void playerDeath();
 };

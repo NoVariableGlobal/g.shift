@@ -5,8 +5,8 @@
 #include "OgreEntity.h"
 #include "OgreSDLContext.h"
 #include "Scene.h"
-#include "TransformComponent.h"
 #include "SoundComponent.h"
+#include "TransformComponent.h"
 
 #include <OgreSceneManager.h>
 #include <json.h>
@@ -17,7 +17,7 @@ void PlayMusicOnStartC::destroy() {
     scene->getComponentsManager()->eraseDC(this);
 }
 
-void PlayMusicOnStartC::setMusic(std::string sound) { 
+void PlayMusicOnStartC::setMusic(std::string sound) {
     if (music != "")
         dynamic_cast<SoundComponent*>(father->getComponent("SoundComponent"))
             ->stopSound(music);
@@ -32,7 +32,7 @@ void PlayMusicOnStartC::setMusic(std::string sound) {
 PlayMusicOnStartCFactory::PlayMusicOnStartCFactory() = default;
 
 Component* PlayMusicOnStartCFactory::create(Entity* _father, Json::Value& _data,
-                                          Scene* _scene) {
+                                            Scene* _scene) {
     PlayMusicOnStartC* play = new PlayMusicOnStartC();
 
     _scene->getComponentsManager()->addDC(play);
