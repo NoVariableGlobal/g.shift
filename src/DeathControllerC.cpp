@@ -10,12 +10,12 @@
 
 void DeathControllerC::destroy() {
     setActive(false);
-    scene->getComponentsManager()->eraseDC(this);
+    scene_->getComponentsManager()->eraseDC(this);
 }
 
 void DeathControllerC::playerDeath() {
-    scene->changeScene("DeadMenu");
-    dynamic_cast<PlayMusicOnStartC*>(father->getComponent("PlayMusicOnStartC"))
+    scene_->changeScene("DeadMenu");
+    dynamic_cast<PlayMusicOnStartC*>(father_->getComponent("PlayMusicOnStartC"))
         ->setMusic("menuMusic");
 }
 

@@ -21,7 +21,7 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
         movingIzq = !movingIzq;
 
         RigidbodyPC* body =
-            reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"));
+            reinterpret_cast<RigidbodyPC*>(father_->getComponent("RigidbodyPC"));
 
         body->setGravity(!movingIzq ? Ogre::Vector3(speed, 0.0f, 0.0f)
                                     : Ogre::Vector3(-speed, 0.0f, 0.0f));
