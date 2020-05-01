@@ -14,16 +14,16 @@
 // COMPONENT CODE
 void PlayMusicOnStartC::destroy() {
     setActive(false);
-    scene->getComponentsManager()->eraseDC(this);
+    scene_->getComponentsManager()->eraseDC(this);
 }
 
 void PlayMusicOnStartC::setMusic(std::string sound) {
     if (music != "")
-        dynamic_cast<SoundComponent*>(father->getComponent("SoundComponent"))
+        dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
             ->stopSound(music);
 
     music = sound;
-    dynamic_cast<SoundComponent*>(father->getComponent("SoundComponent"))
+    dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
         ->playSound(music);
 }
 

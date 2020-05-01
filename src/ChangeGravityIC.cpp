@@ -31,7 +31,7 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
         body->setLinearVelocity(Ogre::Vector3(0.0f, velocity.y, 0.0f));
 
         reinterpret_cast<AmbientLightC*>(
-            scene->getEntitybyId("Light")->getComponent("AmbientLightC"))
+            scene_->getEntityById("Light")->getComponent("AmbientLightC"))
             ->setColour(!movingIzq ? Ogre::Vector3(0.0f, 0.0f, 1.0f)
                                    : Ogre::Vector3(0.5f, 0.0f, 0.5f));
     }

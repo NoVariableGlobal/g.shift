@@ -39,13 +39,7 @@
     <ClCompile Include="..\src\OutOfBoundsEC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\SkyPlaneObjectC.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\DeathStopEC.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\AmbientLightC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\PlayMusicOnStartC.cpp">
@@ -74,13 +68,7 @@
     <ClInclude Include="..\src\OutOfBoundsEC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\SkyPlaneObjectC.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\DeathStopEC.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\AmbientLightC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\PlayMusicOnStartC.h">

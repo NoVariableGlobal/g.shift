@@ -20,7 +20,7 @@ void DeathStopEC::checkEvent() {
         reinterpret_cast<RigidbodyPC*>(player->getComponent("RigidbodyPC"));
     if (rigid->getLinearVelocity().y <= 0)
         reinterpret_cast<DeathControllerC*>(
-            scene->getEntitybyId("GameManager")
+            scene_->getEntityById("GameManager")
                 ->getComponent("DeathControllerC"))
             ->playerDeath();
 }

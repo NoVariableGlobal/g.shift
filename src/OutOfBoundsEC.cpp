@@ -16,7 +16,7 @@ void OutOfBoundsEC::checkEvent() {
     if (transform->getPosition().x > rightBorder ||
         transform->getPosition().x < leftBorder) {
         reinterpret_cast<DeathControllerC*>(
-            scene_->getEntitybyId("GameManager")
+            scene_->getEntityById("GameManager")
                 ->getComponent("DeathControllerC"))
             ->playerDeath();
     }
