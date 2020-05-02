@@ -14,7 +14,6 @@ particle_system SparksParticle
     particle_width 50
     particle_height 50
     quota 500
-    colour 255 252 51 1
     
     emitter Point
     { // e. attributes
@@ -26,7 +25,7 @@ particle_system SparksParticle
         velocity_min 50
         velocity_max 80
     }
-    affector Rotator // la textura
+    affector Rotator
     { // a. attributes
         rotation_range_start 0
         rotation_range_end 360
