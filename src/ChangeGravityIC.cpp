@@ -12,9 +12,15 @@
 #include <iostream>
 #include <json.h>
 
-ChangeGravityIC::ChangeGravityIC() {}
+ChangeGravityIC::ChangeGravityIC() {
+    colourL_ = new Ogre::Vector3();
+    colourR_ = new Ogre::Vector3();
+}
 
-ChangeGravityIC::~ChangeGravityIC() {}
+ChangeGravityIC::~ChangeGravityIC() {
+    delete colourL_;
+    delete colourR_;
+}
 
 void ChangeGravityIC::handleInput(const SDL_Event& _event) {
     if (_event.type == SDL_KEYDOWN && _event.key.keysym.sym == SDLK_SPACE) {
@@ -32,12 +38,19 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
 
         reinterpret_cast<AmbientLightC*>(
             scene_->getEntityById("Light")->getComponent("AmbientLightC"))
-            ->setColour(!movingIzq ? Ogre::Vector3(0.0f, 0.0f, 1.0f)
-                                   : Ogre::Vector3(0.5f, 0.0f, 0.5f));
+            ->setColour(!movingIzq ? *colourR_
+                                   : *colourL_);
     }
 }
 
-void ChangeGravityIC::setSpeed(float _speed) { speed = _speed; }
+void ChangeGravityIC::setSpeed(float _speed) {
+    speed = _speed;
+}
+
+void ChangeGravityIC::setColours(Ogre::Vector3 colourL, Ogre::Vector3 colourR) {
+    *colourL_ = colourL;
+    *colourR_ = colourR;
+}
 
 // FACTORY INFRASTRUCTURE
 
@@ -53,8 +66,20 @@ Component* ChangeGravityICFactory::create(Entity* _father, Json::Value& _data,
 
     if (!_data["speed"].isDouble())
         throw std::exception("ChangeGravityIC: speed is not a double");
-
     changeGravity->setSpeed(_data["speed"].asDouble());
+
+    if (!_data["colourL"].isArray() || !_data["colourL"][0].isDouble())
+        throw std::exception(
+            "ChangeGravityIC: colourL is not an array of doubles");
+    if (!_data["colourR"].isArray() || !_data["colourR"][0].isDouble())
+        throw std::exception(
+            "ChangeGravityIC: colourL is not an array of doubles");
+    changeGravity->setColours(Ogre::Vector3(_data["colourL"][0].asFloat(),
+                                            _data["colourL"][1].asFloat(),
+                                            _data["colourL"][2].asFloat()),
+                              Ogre::Vector3(_data["colourR"][0].asFloat(),
+                                            _data["colourR"][1].asFloat(),
+                                            _data["colourR"][2].asFloat()));
 
     return changeGravity;
 };

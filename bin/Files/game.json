@@ -129,9 +129,28 @@
           }
         },
         {
+          "type": "ParticleC",
+          "attributes": {
+            "particles": [
+              {
+                "name": "Sparks",
+                "particleName": "SparksParticle"
+              }
+            ]
+          }
+        },
+        {
+          "type": "EmitOnStartC",
+          "attributes": {
+            "name": "Sparks"
+          }
+        },
+        {
           "type": "ChangeGravityIC",
           "attributes": {
-            "speed": 250
+            "speed": 250,
+            "colourL" : [0.5, 0, 0.5],
+            "colourR" : [0, 0, 0.8]
           }
         },
         {
