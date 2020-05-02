@@ -15,7 +15,7 @@ void EmitOnStartC::destroy() {
     scene_->getComponentsManager()->eraseDC(this);
 }
 
- void EmitOnStartC::setParticle(std::string name) {
+void EmitOnStartC::setParticle(std::string name) {
     reinterpret_cast<ParticleC*>(father_->getComponent("ParticleC"))
         ->emitParticles(name);
 }
