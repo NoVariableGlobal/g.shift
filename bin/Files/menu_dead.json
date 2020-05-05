@@ -1,6 +1,6 @@
 {
   "entities": [
-
+    // Camera
     {
       "id": "Camera",
       "components": [
@@ -28,6 +28,37 @@
             "node": "nSpotLight",
             "colour": [ 1, 1, 1 ],
             "direction": [ 0, -1, -1 ]
+          }
+        }
+      ]
+    },
+    // Retry Button
+    {
+      "id": "ReturnButton",
+      "components": [
+        {
+          "type": "ChangeSceneButtonComponent",
+          "attributes": {
+            "text": "Play",
+            "position": [ 0.44, 0.5 ],
+            "size": [ 120.0, 40.0 ],
+            "name": "ReturnToGame",
+            "scene": "Game"
+          }
+        }
+      ]
+    },
+    // Quit Button
+    {
+      "id": "QuitButton",
+      "components": [
+        {
+          "type": "QuitButtonComponent",
+          "attributes": {
+            "text": "Quit",
+            "position": [ 0.44, 0.8 ],
+            "size": [ 120.0, 40.0 ],
+            "name": "DeadMenu"
           }
         }
       ]

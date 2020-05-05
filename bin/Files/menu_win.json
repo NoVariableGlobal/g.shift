@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+     "id": "WinEnding",
+      "components": [
+        {
+          "type": "GuiImageComponent",
+          "attributes": {
+            "image": "TaharezLook/YouLoseScreen",
+            "position": [ 0, 0 ],
+            "size": [ 500.0, 200.0 ],
+            "name": "MainMenuTitle"
+          }
+        }
+      ]
+    },
+    // Retry Button
+    {
+      "id": "ReturnButton",
+      "components": [
+        {
+          "type": "ChangeSceneButtonComponent",
+          "attributes": {
+            "text": "Try Again",
+            "position": [ 0.44, 0.7 ],
+            "size": [ 120.0, 40.0 ],
+            "name": "ReturnToGame",
+            "scene": "Game"
+          }
+        }
+      ]
+    },
+    // Quit Button
+    {
+      "id": "QuitButton",
+      "components": [
+        {
+          "type": "QuitButtonComponent",
+          "attributes": {
+            "text": "Quit",
+            "position": [ 0.44, 0.8 ],
+            "size": [ 120.0, 40.0 ],
+            "name": "QuitGame"
+          }
+        }
+      ]
+    },
+    // Camera
+    {
+      "id": "Camera",
+      "persistent": false,
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 3, 3, 3 ]
+          }
+        },
+        {
+          "type": "CameraRC",
+          "attributes": {
+            "node": "nCamera",
+            "viewportColour": [ 0, 0, 0 ],
+            "offset": [ 0, 300, 60 ],
+            "lookAt": [ 0, -1, -0.25 ],
+            "targetId": "none"
+          }
+        }
+      ]
+    }
+  ]
+}

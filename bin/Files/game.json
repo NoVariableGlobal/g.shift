@@ -17,8 +17,8 @@
           "type": "CameraRC",
           "attributes": {
             "node": "nCamera",
-            "viewportColour": [ 0.0, 0.0, 0.0 ],
-            "offset": [ 0, 0, 1000 ],
+            "viewportColour": [ 0.1, 0.1, 0.1 ],
+            "offset": [ 0, 0, 3000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "Player",
             "follow": [ false, true, false ]
@@ -68,7 +68,7 @@
         {
           "type": "CoinCounterC",
           "attributes": {
-            "totalCoins": 32
+            "totalCoins": 23
           }
         },
         {
@@ -82,7 +82,7 @@
         {
           "type": "SoundComponent",
           "attributes": {
-            "sounds": ["gameMusic", "menuMusic"]
+            "sounds": [ "gameMusic", "menuMusic" ]
           }
         },
         {
@@ -90,6 +90,10 @@
           "attributes": {
             "sound": "gameMusic"
           }
+        },
+        {
+          "type": "WinConditionC",
+          "attributes": {}
         }
       ]
     },
@@ -111,13 +115,13 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nPlayer",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, -1500, 0 ],
+            "position": [ 0, 100, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ -50, 0, 0 ],
@@ -149,8 +153,8 @@
           "type": "ChangeGravityIC",
           "attributes": {
             "speed": 250,
-            "colourL" : [0.5, 0, 0.5],
-            "colourR" : [0, 0, 0.8]
+            "colourL": [ 0.5, 0, 0.5 ],
+            "colourR": [ 0, 0, 0.8 ]
           }
         },
         {
@@ -168,8 +172,9 @@
         }
       ]
     },
+
     // Coins
-    // Tutorial of the Game (6)
+    // Tutorial of the Game (3)
     {
       "id": "TutorialCoin1",
       "tag": "Coin",
@@ -259,7 +264,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 275, -700, 0 ],
+            "position": [ 0, -250, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -313,7 +318,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -275, -280, 0 ],
+            "position": [ 0, 600, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -332,169 +337,7 @@
         }
       ]
     },
-    {
-      "id": "TutorialCoin4",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 25, 25, 25 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "gshift_coin.mesh",
-            "node": "nCoin",
-            "material": "CoinMaterial"
-          }
-        },
-        {
-          "type": "AnimationLC",
-          "attributes": {
-            "animations": [
-              {
-                "name": "idle",
-                "loop": true
-              }
-            ]
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 275, 200, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "TutorialCoin5",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 25, 25, 25 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "gshift_coin.mesh",
-            "node": "nCoin",
-            "material": "CoinMaterial"
-          }
-        },
-        {
-          "type": "AnimationLC",
-          "attributes": {
-            "animations": [
-              {
-                "name": "idle",
-                "loop": true
-              }
-            ]
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -275, 600, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "TutorialCoin6",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 25, 25, 25 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "gshift_coin.mesh",
-            "node": "nCoin",
-            "material": "CoinMaterial"
-          }
-        },
-        {
-          "type": "AnimationLC",
-          "attributes": {
-            "animations": [
-              {
-                "name": "idle",
-                "loop": true
-              }
-            ]
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 275, 1000, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    // First Segment of the Game (8)
+    // First Segment of the Game (6)
     {
       "id": "FirstSegmentCoin1",
       "tag": "Coin",
@@ -692,7 +535,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -225, 2700, 0 ],
+            "position": [ -225, 2850, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -746,7 +589,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -225, 3000, 0 ],
+            "position": [ 0, 3400, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -800,115 +643,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 3250, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin7",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 25, 25, 25 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "gshift_coin.mesh",
-            "node": "nCoin",
-            "material": "CoinMaterial"
-          }
-        },
-        {
-          "type": "AnimationLC",
-          "attributes": {
-            "animations": [
-              {
-                "name": "idle",
-                "loop": true
-              }
-            ]
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 300, 4100, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin8",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 25, 25, 25 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "gshift_coin.mesh",
-            "node": "nCoin",
-            "material": "CoinMaterial"
-          }
-        },
-        {
-          "type": "AnimationLC",
-          "attributes": {
-            "animations": [
-              {
-                "name": "idle",
-                "loop": true
-              }
-            ]
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 300, 3800, 0 ],
+            "position": [ 300, 3900, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1017,7 +752,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -225, 4800, 0 ],
+            "position": [ -250, 4800, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1287,7 +1022,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -50, 7100, 0 ],
+            "position": [ -100, 7100, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1307,7 +1042,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin21",
+      "id": "SecondSegmentCoin8",
       "tag": "Coin",
       "components": [
         {
@@ -1341,7 +1076,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 250, 7300, 0 ],
+            "position": [ -300, 7700, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1360,7 +1095,7 @@
         }
       ]
     },
-    // Third Segment of the Game (7)
+    // Third Segment of the Game (6)
     {
       "id": "ThirdSegmentCoin1",
       "tag": "Coin",
@@ -1396,7 +1131,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 200, 8150, 0 ],
+            "position": [ 50, 8050, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1450,7 +1185,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 150, 8750, 0 ],
+            "position": [ 150, 8800, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1504,7 +1239,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 275, 9300, 0 ],
+            "position": [ 250, 9250, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1558,7 +1293,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 250, 9800, 0 ],
+            "position": [ 225, 9750, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1612,7 +1347,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 75, 10150, 0 ],
+            "position": [ 100, 10150, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1666,61 +1401,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -250, 10400, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentCoin7",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 25, 25, 25 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "gshift_coin.mesh",
-            "node": "nCoin",
-            "material": "CoinMaterial"
-          }
-        },
-        {
-          "type": "AnimationLC",
-          "attributes": {
-            "animations": [
-              {
-                "name": "idle",
-                "loop": true
-              }
-            ]
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -325, 10800, 0 ],
+            "position": [ -300, 10500, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1775,8 +1456,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -275, 11100, 0 ],
-            "shape": [ 50, 50, 50 ],
+            "position": [ -275, 11150, 0 ],
+            "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1829,7 +1510,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -275, 11700, 0 ],
+            "position": [ -250, 11800, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1903,23 +1584,24 @@
       ]
     },
 
+
     // WALLS OF THE TUBE
     // Tutorial of the Game
     {
-      "id": "LeftWallTutorial",
+      "id": "GSHIFT_LEVEL_1_MESH",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 22, 1 ]
+            "scale": [ 50, 50, 50 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "gshift_level_1.mesh",
             "node": "nCube",
             "material": "PinkColourMaterial"
           }
@@ -1928,7 +1610,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -500, -800, 0 ],
-            "shape": [ 100, 1100, 50 ],
+            "shape": [ 0, 0, 0 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -1940,21 +1622,21 @@
         }
       ]
     },
-    {
-      "id": "RightWallTutorial",
+    /*{
+      "id": "RightWall",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
-            "position": [ -10, 0, 0 ],
+            "position": [ 0, 50, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 22, 1 ]
+            "scale": [ 50, 50, 50 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "RightWalls.mesh",
             "node": "nCube",
             "material": "BlueColourMaterial"
           }
@@ -1963,7 +1645,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, -800, 0 ],
-            "shape": [ 100, 1100, 50 ],
+            "shape": [ 0, 0, 0 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -1974,8 +1656,8 @@
           }
         }
       ]
-    },
-    // First Segment of the Game
+    },*/
+    // First Segment Walls
     {
       "id": "LeftWallFirstSegment1",
       "components": [
@@ -1988,18 +1670,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -500, 1200, 0 ],
-            "shape": [ 100, 900, 50 ],
+            "position": [ -500, 100, 0 ],
+            "shape": [ 100, 2000, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -2023,18 +1697,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 500, 1200, 0 ],
-            "shape": [ 100, 900, 50 ],
+            "position": [ 500, 100, 0 ],
+            "shape": [ 100, 2000, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -2055,14 +1721,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 10, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2093,14 +1751,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 2800, 0 ],
@@ -2125,14 +1775,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 6, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2163,14 +1805,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 3900, 0 ],
@@ -2186,7 +1820,7 @@
         }
       ]
     },
-    // Second Segment of the Game
+    // Second Segment Walls
     {
       "id": "LeftWallSecondSegment1",
       "components": [
@@ -2196,14 +1830,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 6, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2234,14 +1860,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 4450, 0 ],
@@ -2266,14 +1884,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 6, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2304,14 +1914,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 5400, 0 ],
@@ -2336,14 +1938,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2374,14 +1968,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 6000, 0 ],
@@ -2406,14 +1992,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 8, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2444,14 +2022,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 6800, 0 ],
@@ -2467,7 +2037,7 @@
         }
       ]
     },
-    // Third Segment of the Game
+    // Third Segment Walls
     {
       "id": "LeftWallThirdSegment1",
       "components": [
@@ -2477,14 +2047,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 8, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2515,14 +2077,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 7950, 0 ],
@@ -2547,14 +2101,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 6, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -2585,14 +2131,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -500, 9450, 0 ],
@@ -2617,14 +2155,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -2655,14 +2185,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 9700, 0 ],
@@ -2687,14 +2209,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -2725,14 +2239,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -500, 10400, 0 ],
@@ -2748,7 +2254,7 @@
         }
       ]
     },
-    // Fourth Segment of the Game
+    // Fourth Segment Walls
     {
       "id": "LeftWallFourthSegment1",
       "components": [
@@ -2758,14 +2264,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2796,14 +2294,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 11150, 0 ],
@@ -2828,14 +2318,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2866,14 +2348,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 11900, 0 ],
@@ -2898,14 +2372,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 8, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2936,14 +2402,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 500, 12800, 0 ],
@@ -2959,6 +2417,7 @@
         }
       ]
     },
+    // Final Wall
     {
       "id": "UpperWall",
       "components": [
@@ -2967,7 +2426,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 12, 0.5, 1 ]
+            "scale": [ 100, 0.5, 1 ]
           }
         },
         {
@@ -2982,7 +2441,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 0, 13225, 0 ],
-            "shape": [ 600, 25, 50 ],
+            "shape": [ 10000, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -2991,13 +2450,15 @@
             "friction": 0,
             "restitution": 0
           }
+        },
+        {
+          "type": "UpperWallEC",
+          "attributes": {}
         }
       ]
     },
 
-    // INSIDE OF THE TUBE
-    // Inner Left and Right Blocks
-    // First Segment of the Game
+    // First Segment Inner Blocks (8 a 5)
     {
       "id": "FirstSegmentBlock1",
       "components": [
@@ -3010,18 +2471,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 50, 1800, 0 ],
-            "shape": [ 50, 150, 50 ],
+            "position": [ 0, 1800, 0 ],
+            "shape": [ 100, 150, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3041,22 +2494,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
+            "scale": [ 0.5, 6, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -50, 1800, 0 ],
-            "shape": [ 50, 150, 50 ],
+            "position": [ 0, 2800, 0 ],
+            "shape": [ 50, 300, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3076,85 +2521,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 6, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -25, 2800, 0 ],
-            "shape": [ 25, 300, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentBlock4",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 6, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 25, 2800, 0 ],
-            "shape": [ 25, 300, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentBlock5",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
             "scale": [ 1.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3174,7 +2541,7 @@
       ]
     },
     {
-      "id": "FirstSegmentBlock6",
+      "id": "FirstSegmentBlock4",
       "components": [
         {
           "type": "TransformComponent",
@@ -3182,14 +2549,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 1.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -3209,7 +2568,7 @@
       ]
     },
     {
-      "id": "FirstSegmentBlock7",
+      "id": "FirstSegmentBlock5",
       "components": [
         {
           "type": "TransformComponent",
@@ -3220,18 +2579,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -50, 3900, 0 ],
-            "shape": [ 50, 150, 50 ],
+            "position": [ 0, 3900, 0 ],
+            "shape": [ 100, 150, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3243,42 +2594,8 @@
         }
       ]
     },
-    {
-      "id": "FirstSegmentBlock8",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 50, 3900, 0 ],
-            "shape": [ 50, 150, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    // Second Segment of the Game
+
+    // Second Segment Inner Blocks (17 a 10)
     {
       "id": "SecondSegmentBlock1",
       "components": [
@@ -3291,18 +2608,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 50, 4800, 0 ],
-            "shape": [ 50, 200, 50 ],
+            "position": [ 0, 4800, 0 ],
+            "shape": [ 100, 200, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3326,18 +2635,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -50, 4800, 0 ],
-            "shape": [ 50, 200, 50 ],
+            "position": [ 0, 5600, 0 ],
+            "shape": [ 100, 200, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3357,22 +2658,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
+            "scale": [ 1, 1, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 50, 5600, 0 ],
-            "shape": [ 50, 200, 50 ],
+            "position": [ 130, 6150, 0 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3392,22 +2685,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
+            "scale": [ 1, 1, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -50, 5600, 0 ],
-            "shape": [ 50, 200, 50 ],
+            "position": [ -130, 6150, 0 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3427,22 +2712,41 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
+            "scale": [ 1, 3, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 130, 6150, 0 ],
-            "shape": [ 50, 50, 50 ],
+            "position": [ 0, 6700, 0 ],
+            "shape": [ 100, 150, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "SecondSegmentBlock5",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 7300, 0 ],
+            "shape": [ 50, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3466,17 +2770,9 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -130, 6150, 0 ],
+            "position": [ -350, 6800, 0 ],
             "shape": [ 50, 50, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -3497,190 +2793,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 50, 6700, 0 ],
-            "shape": [ 50, 150, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "SecondSegmentBlock8",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -50, 6700, 0 ],
-            "shape": [ 50, 150, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "SecondSegmentBlock9",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -25, 7300, 0 ],
-            "shape": [ 25, 25, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "SecondSegmentBlock10",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 25, 7300, 0 ],
-            "shape": [ 25, 25, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "SecondSegmentBlock11",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
             "scale": [ 1, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -350, 6800, 0 ],
-            "shape": [ 50, 50, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "SecondSegmentBlock12",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -3700,7 +2813,7 @@
       ]
     },
     {
-      "id": "SecondSegmentBlock14",
+      "id": "SecondSegmentBlock8",
       "components": [
         {
           "type": "TransformComponent",
@@ -3708,14 +2821,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3735,7 +2840,7 @@
       ]
     },
     {
-      "id": "SecondSegmentBlock15",
+      "id": "SecondSegmentBlock9",
       "components": [
         {
           "type": "TransformComponent",
@@ -3745,14 +2850,7 @@
             "scale": [ 1, 1, 1 ]
           }
         },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
+
         {
           "type": "RigidbodyPC",
           "attributes": {
@@ -3770,7 +2868,7 @@
       ]
     },
     {
-      "id": "SecondSegmentBlock16",
+      "id": "SecondSegmentBlock10",
       "components": [
         {
           "type": "TransformComponent",
@@ -3781,18 +2879,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 50, 7600, 0 ],
-            "shape": [ 50, 150, 50 ],
+            "position": [ 0, 7600, 0 ],
+            "shape": [ 100, 150, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3804,42 +2894,7 @@
         }
       ]
     },
-    {
-      "id": "SecondSegmentBlock17",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -50, 7600, 0 ],
-            "shape": [ 50, 150, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    // Third Segment of the Game
+    // Third Segment Inner Blocks (22 a 16)
     {
       "id": "ThirdSegmentBlock1",
       "components": [
@@ -3849,14 +2904,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 1, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3887,14 +2934,6 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 150, 8300, 0 ],
@@ -3919,14 +2958,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -3957,18 +2988,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -75, 8550, 0 ],
-            "shape": [ 75, 25, 50 ],
+            "position": [ 0, 8550, 0 ],
+            "shape": [ 150, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3988,22 +3011,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
+            "scale": [ 1, 1, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 75, 8550, 0 ],
-            "shape": [ 75, 25, 50 ],
+            "position": [ -350, 8500, 0 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4027,17 +3042,9 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -350, 8500, 0 ],
+            "position": [ 350, 8500, 0 ],
             "shape": [ 50, 50, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -4058,50 +3065,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 350, 8500, 0 ],
-            "shape": [ 50, 50, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentBlock8",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -4121,6 +3085,33 @@
       ]
     },
     {
+      "id": "ThirdSegmentBlock8",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 4, 1 ]
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 8900, 0 ],
+            "shape": [ 100, 200, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
+    {
       "id": "ThirdSegmentBlock9",
       "components": [
         {
@@ -4128,85 +3119,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 50, 8900, 0 ],
-            "shape": [ 50, 200, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentBlock10",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -50, 8900, 0 ],
-            "shape": [ 50, 200, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentBlock11",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
             "scale": [ 1, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4226,7 +3139,7 @@
       ]
     },
     {
-      "id": "ThirdSegmentBlock12",
+      "id": "ThirdSegmentBlock10",
       "components": [
         {
           "type": "TransformComponent",
@@ -4237,18 +3150,64 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
+          "type": "RigidbodyPC",
           "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
+            "position": [ 0, 9250, 0 ],
+            "shape": [ 150, 25, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentBlock11",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1.5, 1, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -75, 9250, 0 ],
-            "shape": [ 75, 25, 50 ],
+            "position": [ 0, 9500, 0 ],
+            "shape": [ 150, 50, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentBlock12",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1.25, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 9750, 0 ],
+            "shape": [ 125, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4268,22 +3227,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
+            "scale": [ 2, 2, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 75, 9250, 0 ],
-            "shape": [ 75, 25, 50 ],
+            "position": [ -125, 10050, 0 ],
+            "shape": [ 100, 100, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4303,190 +3254,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -75, 9500, 0 ],
-            "shape": [ 75, 50, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentBlock15",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 75, 9500, 0 ],
-            "shape": [ 75, 50, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentBlock16",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.25, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -62.5, 9750, 0 ],
-            "shape": [ 62.5, 25, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentBlock17",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.25, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 62.5, 9750, 0 ],
-            "shape": [ 62.5, 25, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentBlock18",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -100, 10050, 0 ],
-            "shape": [ 100, 100, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentBlock19",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -4506,7 +3274,7 @@
       ]
     },
     {
-      "id": "ThirdSegmentBlock20",
+      "id": "ThirdSegmentBlock15",
       "components": [
         {
           "type": "TransformComponent",
@@ -4517,18 +3285,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 50, 10600, 0 ],
-            "shape": [ 50, 150, 50 ],
+            "position": [ 0, 10600, 0 ],
+            "shape": [ 100, 150, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4541,42 +3301,7 @@
       ]
     },
     {
-      "id": "ThirdSegmentBlock21",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -50, 10600, 0 ],
-            "shape": [ 50, 150, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentBlock22",
+      "id": "ThirdSegmentBlock16",
       "components": [
         {
           "type": "TransformComponent",
@@ -4584,14 +3309,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 1, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4610,7 +3327,7 @@
         }
       ]
     },
-    // Fourth Segment of the Game
+    // Fourth Segment Inner Blocks (18 a 12)
     {
       "id": "FourthSegmentBlock1",
       "components": [
@@ -4623,18 +3340,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 75, 11150, 0 ],
-            "shape": [ 75, 250, 50 ],
+            "position": [ 0, 11150, 0 ],
+            "shape": [ 150, 250, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4654,22 +3363,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
+            "scale": [ 2, 1.5, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -75, 11150, 0 ],
-            "shape": [ 75, 250, 50 ],
+            "position": [ 0, 11550, 0 ],
+            "shape": [ 200, 75, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4689,22 +3390,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 1.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
+            "scale": [ 1, 3, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 100, 11550, 0 ],
-            "shape": [ 100, 75, 50 ],
+            "position": [ 0, 11900, 0 ],
+            "shape": [ 100, 150, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4724,120 +3417,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 1.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -100, 11550, 0 ],
-            "shape": [ 100, 75, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "FourthSegmentBlock5",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 50, 11900, 0 ],
-            "shape": [ 50, 150, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "FourthSegmentBlock6",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -50, 11900, 0 ],
-            "shape": [ 50, 150, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "FourthSegmentBlock7",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -4857,7 +3437,7 @@
       ]
     },
     {
-      "id": "FourthSegmentBlock8",
+      "id": "FourthSegmentBlock5",
       "components": [
         {
           "type": "TransformComponent",
@@ -4865,14 +3445,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4892,7 +3464,7 @@
       ]
     },
     {
-      "id": "FourthSegmentBlock9",
+      "id": "FourthSegmentBlock6",
       "components": [
         {
           "type": "TransformComponent",
@@ -4903,18 +3475,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 50, 12250, 0 ],
-            "shape": [ 50, 100, 50 ],
+            "position": [ 0, 12250, 0 ],
+            "shape": [ 100, 100, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4927,42 +3491,7 @@
       ]
     },
     {
-      "id": "FourthSegmentBlock10",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -50, 12250, 0 ],
-            "shape": [ 50, 100, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "FourthSegmentBlock11",
+      "id": "FourthSegmentBlock7",
       "components": [
         {
           "type": "TransformComponent",
@@ -4970,14 +3499,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -4997,7 +3518,7 @@
       ]
     },
     {
-      "id": "FourthSegmentBlock12",
+      "id": "FourthSegmentBlock8",
       "components": [
         {
           "type": "TransformComponent",
@@ -5005,14 +3526,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -5032,7 +3545,7 @@
       ]
     },
     {
-      "id": "FourthSegmentBlock13",
+      "id": "FourthSegmentBlock9",
       "components": [
         {
           "type": "TransformComponent",
@@ -5043,18 +3556,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -50, 12650, 0 ],
-            "shape": [ 50, 25, 50 ],
+            "position": [ 0, 12650, 0 ],
+            "shape": [ 100, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5067,42 +3572,7 @@
       ]
     },
     {
-      "id": "FourthSegmentBlock14",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 50, 12650, 0 ],
-            "shape": [ 50, 25, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "FourthSegmentBlock15",
+      "id": "FourthSegmentBlock10",
       "components": [
         {
           "type": "TransformComponent",
@@ -5110,14 +3580,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
           }
         },
         {
@@ -5137,7 +3599,7 @@
       ]
     },
     {
-      "id": "FourthSegmentBlock16",
+      "id": "FourthSegmentBlock11",
       "components": [
         {
           "type": "TransformComponent",
@@ -5145,14 +3607,6 @@
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
           }
         },
         {
@@ -5172,7 +3626,7 @@
       ]
     },
     {
-      "id": "FourthSegmentBlock17",
+      "id": "FourthSegmentBlock12",
       "components": [
         {
           "type": "TransformComponent",
@@ -5183,53 +3637,10 @@
           }
         },
         {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -50, 13100, 0 ],
-            "shape": [ 50, 25, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "FourthSegmentBlock18",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 50, 13100, 0 ],
-            "shape": [ 50, 25, 50 ],
+            "position": [ 0, 13100, 0 ],
+            "shape": [ 100, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5242,10 +3653,9 @@
       ]
     },
 
-    // SPIKES
-    // Tutorial of the Game
-    {
-      "id": "TutorialSpike1",
+    // Spikes Mesh
+    /*{
+      "id": "SpikeMesh",
       "tag": "Spike",
       "components": [
         {
@@ -5253,13 +3663,13 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "scale": [ 50, 50, 50 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spikes.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -5267,8 +3677,42 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, -1000, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -500, -800, 0 ],
+            "shape": [ 0, 0, 0 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },*/
+    // Spikes RB
+    // Tutorial Spikes
+    {
+      "id": "TutorialSpikeSet1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0, 0, 0 ]
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 370, -795, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5285,7 +3729,7 @@
       ]
     },
     {
-      "id": "TutorialSpike2",
+      "id": "TutorialSpikeSet2",
       "tag": "Spike",
       "components": [
         {
@@ -5293,22 +3737,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, -650, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -370, -360, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5325,7 +3761,7 @@
       ]
     },
     {
-      "id": "TutorialSpike3",
+      "id": "TutorialSpikeSet3",
       "tag": "Spike",
       "components": [
         {
@@ -5333,22 +3769,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, -200, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 370, 210, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5365,7 +3793,7 @@
       ]
     },
     {
-      "id": "TutorialSpike4",
+      "id": "TutorialSpikeSet4",
       "tag": "Spike",
       "components": [
         {
@@ -5373,22 +3801,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 100, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -370, 630, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5404,9 +3824,10 @@
         }
       ]
     },
-    // First Segment of the Game
+
+    // First Segment Spikes
     {
-      "id": "FirstSegmentSpike1",
+      "id": "FirstSegmentSpikeSet1",
       "tag": "Spike",
       "components": [
         {
@@ -5414,62 +3835,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 600, 0 ],
-            "shape": [ 25, 100, 50 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "SpikeEC",
-          "attributes": {}
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentSpike2",
-      "tag": "Spike",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -375, 900, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 370, 1260, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5486,7 +3859,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike3",
+      "id": "FirstSegmentSpikeSet2",
       "tag": "Spike",
       "components": [
         {
@@ -5494,22 +3867,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 1400, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -370, 1210, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5526,7 +3891,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike4",
+      "id": "FirstSegmentSpikeSet3",
       "tag": "Spike",
       "components": [
         {
@@ -5534,22 +3899,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 1600, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -370, 1670, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5566,7 +3923,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike5",
+      "id": "FirstSegmentSpikeSet4",
       "tag": "Spike",
       "components": [
         {
@@ -5574,22 +3931,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 1800, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ 130, 1800, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5606,7 +3955,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike6",
+      "id": "FirstSegmentSpikeSet5",
       "tag": "Spike",
       "components": [
         {
@@ -5614,22 +3963,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 1800, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ -130, 1800, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5646,7 +3987,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike7",
+      "id": "FirstSegmentSpikeSet6",
       "tag": "Spike",
       "components": [
         {
@@ -5654,22 +3995,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 2800, 0 ],
-            "shape": [ 25, 250, 50 ],
+            "position": [ -370, 2800, 0 ],
+            "shape": [ 40, 280, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5686,7 +4019,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike8",
+      "id": "FirstSegmentSpikeSet7",
       "tag": "Spike",
       "components": [
         {
@@ -5694,22 +4027,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -75, 2800, 0 ],
-            "shape": [ 25, 250, 50 ],
+            "position": [ -80, 2800, 0 ],
+            "shape": [ 40, 280, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5726,7 +4051,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike9",
+      "id": "FirstSegmentSpikeSet8",
       "tag": "Spike",
       "components": [
         {
@@ -5734,22 +4059,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 2800, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ 370, 2780, 0 ],
+            "shape": [ 40, 210, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5766,7 +4083,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike10",
+      "id": "FirstSegmentSpikeSet9",
       "tag": "Spike",
       "components": [
         {
@@ -5774,22 +4091,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 3250, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ 370, 3215, 0 ],
+            "shape": [ 40, 40, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5806,7 +4115,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike11",
+      "id": "FirstSegmentSpikeSet10",
       "tag": "Spike",
       "components": [
         {
@@ -5814,22 +4123,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 3250, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -370, 3215, 0 ],
+            "shape": [ 40, 40, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5846,7 +4147,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike12",
+      "id": "FirstSegmentSpikeSet11",
       "tag": "Spike",
       "components": [
         {
@@ -5854,22 +4155,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 3900, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ 130, 3900, 0 ],
+            "shape": [ 45, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5886,7 +4179,7 @@
       ]
     },
     {
-      "id": "FirstSegmentSpike13",
+      "id": "FirstSegmentSpikeSet12",
       "tag": "Spike",
       "components": [
         {
@@ -5894,22 +4187,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 3900, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ -130, 3900, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -5925,9 +4210,10 @@
         }
       ]
     },
-    // Second Segment of the Game
+
+    // Second Segment Spikes
     {
-      "id": "SecondSegmentSpike1",
+      "id": "SecondSegmentSpikeSet1",
       "tag": "Spike",
       "components": [
         {
@@ -5935,62 +4221,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 4800, 0 ],
-            "shape": [ 25, 200, 50 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "SpikeEC",
-          "attributes": {}
-        }
-      ]
-    },
-    {
-      "id": "SecondSegmentSpike2",
-      "tag": "Spike",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -125, 4950, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 130, 4800, 0 ],
+            "shape": [ 40, 195, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6007,7 +4245,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike3",
+      "id": "SecondSegmentSpikeSet2",
       "tag": "Spike",
       "components": [
         {
@@ -6015,22 +4253,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 4650, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -130, 4920, 0 ],
+            "shape": [ 45, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6047,7 +4277,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike4",
+      "id": "SecondSegmentSpikeSet3",
       "tag": "Spike",
       "components": [
         {
@@ -6055,22 +4285,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 4800, 0 ],
-            "shape": [ 25, 75, 50 ],
+            "position": [ -130, 4680, 0 ],
+            "shape": [ 45, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6087,7 +4309,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike5",
+      "id": "SecondSegmentSpikeSet4",
       "tag": "Spike",
       "components": [
         {
@@ -6095,22 +4317,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 5200, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -370, 4790, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6127,7 +4341,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike6",
+      "id": "SecondSegmentSpikeSet5",
       "tag": "Spike",
       "components": [
         {
@@ -6135,22 +4349,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 5600, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 370, 5215, 0 ],
+            "shape": [ 40, 104, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6167,7 +4373,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike7",
+      "id": "SecondSegmentSpikeSet6",
       "tag": "Spike",
       "components": [
         {
@@ -6175,22 +4381,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 5725, 0 ],
-            "shape": [ 25, 75, 50 ],
+            "position": [ 370, 5585, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6207,7 +4405,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike8",
+      "id": "SecondSegmentSpikeSet7",
       "tag": "Spike",
       "components": [
         {
@@ -6215,22 +4413,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 5600, 0 ],
-            "shape": [ 25, 200, 50 ],
+            "position": [ 130, 5730, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6247,7 +4437,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike9",
+      "id": "SecondSegmentSpikeSet8",
       "tag": "Spike",
       "components": [
         {
@@ -6255,22 +4445,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 5600, 0 ],
-            "shape": [ 25, 200, 50 ],
+            "position": [ -370, 5600, 0 ],
+            "shape": [ 45, 180, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6287,7 +4469,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike10",
+      "id": "SecondSegmentSpikeSet9",
       "tag": "Spike",
       "components": [
         {
@@ -6295,22 +4477,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 5950, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -130, 5600, 0 ],
+            "shape": [ 40, 170, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6327,7 +4501,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike11",
+      "id": "SecondSegmentSpikeSet10",
       "tag": "Spike",
       "components": [
         {
@@ -6335,22 +4509,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 6350, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 370, 5950, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6367,7 +4533,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike12",
+      "id": "SecondSegmentSpikeSer11",
       "tag": "Spike",
       "components": [
         {
@@ -6375,22 +4541,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 200, 6150, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 370, 6380, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6407,7 +4565,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike13",
+      "id": "SecondSegmentSpikeSet12",
       "tag": "Spike",
       "components": [
         {
@@ -6415,22 +4573,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 6300, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 205, 6150, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6447,7 +4597,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike14",
+      "id": "SecondSegmentSpikeSet13",
       "tag": "Spike",
       "components": [
         {
@@ -6455,22 +4605,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -200, 6150, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -370, 6280, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6487,7 +4629,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike15",
+      "id": "SecondSegmentSpikeSet14",
       "tag": "Spike",
       "components": [
         {
@@ -6495,22 +4637,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.25, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 290, 6700, 0 ],
-            "shape": [ 12.5, 50, 50 ],
+            "position": [ -205, 6150, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6527,7 +4661,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike16",
+      "id": "SecondSegmentSpikeSet15",
       "tag": "Spike",
       "components": [
         {
@@ -6535,22 +4669,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 6600, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 270, 6700, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6567,7 +4693,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike17",
+      "id": "SecondSegmentSpikeSet16",
       "tag": "Spike",
       "components": [
         {
@@ -6575,22 +4701,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 6700, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ -370, 6620, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6607,7 +4725,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike18",
+      "id": "SecondSegmentSpikeSet17",
       "tag": "Spike",
       "components": [
         {
@@ -6615,22 +4733,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 6700, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ -130, 6700, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6647,7 +4757,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike19",
+      "id": "SecondSegmentSpikeSet18",
       "tag": "Spike",
       "components": [
         {
@@ -6655,22 +4765,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 225, 7050, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 130, 6700, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6687,7 +4789,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike20",
+      "id": "SecondSegmentSpikeSet19",
       "tag": "Spike",
       "components": [
         {
@@ -6695,22 +4797,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 75, 7050, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 230, 7050, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6727,7 +4821,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike21",
+      "id": "SecondSegmentSpikeSet20",
       "tag": "Spike",
       "components": [
         {
@@ -6735,22 +4829,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 7275, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ 65, 7050, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6767,7 +4853,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike22",
+      "id": "SecondSegmentSpikeSet21",
       "tag": "Spike",
       "components": [
         {
@@ -6775,22 +4861,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 7275, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ 370, 7250, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6807,7 +4885,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike23",
+      "id": "SecondSegmentSpikeSet22",
       "tag": "Spike",
       "components": [
         {
@@ -6815,22 +4893,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 7600, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ -370, 7250, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6847,7 +4917,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike24",
+      "id": "SecondSegmentSpikeSet23",
       "tag": "Spike",
       "components": [
         {
@@ -6855,22 +4925,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 7600, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ -130, 7600, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6887,7 +4949,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike25",
+      "id": "SecondSegmentSpikeSet24",
       "tag": "Spike",
       "components": [
         {
@@ -6895,22 +4957,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 130, 6100, 0 ],
-            "shape": [ 50, 25, 50 ],
+            "position": [ 130, 7600, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6927,7 +4981,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike26",
+      "id": "SecondSegmentSpikeSet25",
       "tag": "Spike",
       "components": [
         {
@@ -6935,22 +4989,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -130, 6100, 0 ],
-            "shape": [ 50, 25, 50 ],
+            "position": [ 120, 6080, 0 ],
+            "shape": [ 45, 40, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -6967,7 +5013,7 @@
       ]
     },
     {
-      "id": "SecondSegmentSpike27",
+      "id": "SecondSegmentSpikeSet26",
       "tag": "Spike",
       "components": [
         {
@@ -6975,63 +5021,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 0.25, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 7275, 0 ],
-            "shape": [ 50, 12.5, 50 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "SpikeEC",
-          "attributes": {}
-        }
-      ]
-    },
-    // Third Segment of the Game
-    {
-      "id": "ThirdSegmentSpike1",
-      "tag": "Spike",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -175, 8150, 0 ],
-            "shape": [ 25, 200, 50 ],
+            "position": [ -120, 6080, 0 ],
+            "shape": [ 45, 40, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7048,7 +5045,7 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike2",
+      "id": "SecondSegmentSpikeSet27",
       "tag": "Spike",
       "components": [
         {
@@ -7056,22 +5053,48 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 4, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 40, 40, 40 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 8150, 0 ],
-            "shape": [ 25, 200, 50 ],
+            "position": [ 0, 7255, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+
+    // Third Segment Spikes
+    {
+      "id": "ThirdSegmentSpikeSet1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0, 0, 0 ]
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -185, 8150, 0 ],
+            "shape": [ 40, 170, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7088,7 +5111,7 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike3",
+      "id": "ThirdSegmentSpikeSet2",
       "tag": "Spike",
       "components": [
         {
@@ -7096,22 +5119,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 7875, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -370, 8150, 0 ],
+            "shape": [ 40, 170, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7136,22 +5151,46 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 8275, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ 370, 7900, 0 ],
+            "shape": [ 40, 45, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpike4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0, 0, 0 ]
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 370, 8300, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7176,22 +5215,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 200, 8300, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 210, 8300, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7216,22 +5247,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 200, 8000, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 210, 8000, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7256,22 +5279,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 9200, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 370, 9200, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7296,22 +5311,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 175, 9250, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -370, 9000, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7336,22 +5343,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -175, 9250, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -370, 9500, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7376,22 +5375,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 9000, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 175, 9500, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7416,22 +5407,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 9500, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ -170, 9500, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7456,22 +5439,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0.5, 3, 1 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 175, 9500, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 370, 9700, 0 ],
+            "shape": [ 40, 145, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7496,22 +5471,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -175, 9500, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -260, 10050, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7536,22 +5503,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 9700, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ 10, 10050, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7576,22 +5535,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -225, 10050, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 370, 10600, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7616,22 +5567,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 10050, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 135, 10600, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7656,22 +5599,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 10600, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -235, 10700, 0 ],
+            "shape": [ 40, 45, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7687,167 +5622,8 @@
         }
       ]
     },
-    {
-      "id": "ThirdSegmentSpike18",
-      "tag": "Spike",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 125, 10600, 0 ],
-            "shape": [ 25, 100, 50 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "SpikeEC",
-          "attributes": {}
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentSpike19",
-      "tag": "Spike",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -225, 10700, 0 ],
-            "shape": [ 25, 50, 50 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "SpikeEC",
-          "attributes": {}
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentSpike20",
-      "tag": "Spike",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 300, 8750, 0 ],
-            "shape": [ 100, 25, 50 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "SpikeEC",
-          "attributes": {}
-        }
-      ]
-    },
-    {
-      "id": "ThirdSegmentSpike21",
-      "tag": "Spike",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 0.25, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 250, 10112.5, 0 ],
-            "shape": [ 100, 12.5, 50 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "SpikeEC",
-          "attributes": {}
-        }
-      ]
-    },
-    // Fourth Segment of the Game
+
+    // Fourth Segment Spikes
     {
       "id": "FourthSegmentSpike1",
       "tag": "Spike",
@@ -7857,22 +5633,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 10950, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -370, 10970, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7897,22 +5665,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 11150, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -370, 11160, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7937,22 +5697,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 11350, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -370, 11330, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -7977,22 +5729,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -175, 11050, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -170, 11070, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8017,22 +5761,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -175, 11250, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -170, 11240, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8057,22 +5793,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 10950, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 370, 10970, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8097,22 +5825,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 11150, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 370, 11160, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8137,22 +5857,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 11350, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 370, 11330, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8177,22 +5889,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 175, 11050, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 170, 11070, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8217,22 +5921,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 175, 11250, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 170, 11240, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8257,22 +5953,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 225, 11550, 0 ],
-            "shape": [ 25, 75, 50 ],
+            "position": [ 230, 11550, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8297,22 +5985,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -225, 11550, 0 ],
-            "shape": [ 25, 75, 50 ],
+            "position": [ -230, 11550, 0 ],
+            "shape": [ 40, 70, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8337,22 +6017,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 11800, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -370, 11800, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8377,22 +6049,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 11850, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -130, 11850, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8417,22 +6081,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 11800, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 370, 11800, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8457,22 +6113,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 11850, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 120, 11850, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8497,22 +6145,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 12250, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -120, 12250, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8537,22 +6177,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 12250, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 120, 12250, 0 ],
+            "shape": [ 40, 105, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8577,22 +6209,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 12650, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -120, 12650, 0 ],
+            "shape": [ 15, 20, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8617,22 +6241,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 12650, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ 120, 12650, 0 ],
+            "shape": [ 15, 20, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8657,22 +6273,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 13100, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -120, 13100, 0 ],
+            "shape": [ 15, 20, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -8697,22 +6305,14 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nSpike",
-            "material": "RedColourMaterial"
+            "scale": [ 0, 0, 0 ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 13100, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ 120, 13100, 0 ],
+            "shape": [ 15, 20, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,

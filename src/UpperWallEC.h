@@ -10,5 +10,5 @@ class UpperWallEC : public EventComponent {
     UpperWallEC() = default;
     ~UpperWallEC() = default;
 
-	virtual void checkEvent();
+    virtual void checkEvent();
 };
