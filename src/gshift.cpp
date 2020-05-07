@@ -15,6 +15,7 @@ int WINAPI WinMain(HINSTANCE hinstance, HINSTANCE prevInstance, LPSTR lmCmdLine,
         Game game;
         if (game.init("Game", "TaharezLook", "TaharezLook.scheme",
                       "TaharezLook/MouseArrow", "DejaVuSans-14"))
+            game.setFullScreen();
             game.run();
     } catch (std::exception& e) {
         std::cout << "\n"
