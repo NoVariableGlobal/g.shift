@@ -6,6 +6,11 @@
 #include "Scene.h"
 #include "WinConditionC.h"
 
+void UpperWallEC::destroy() {
+    setActive(false);
+    scene_->getComponentsManager()->eraseEC(this);
+}
+
 void UpperWallEC::checkEvent() {
     if (reinterpret_cast<RigidbodyPC*>(father_->getComponent("RigidbodyPC"))
             ->collidesWith("Player")) {

@@ -6,6 +6,9 @@
 DECLARE_FACTORY(WinConditionC);
 
 class WinConditionC : public Component {
+  private:
+    bool activated = false;
+
   public:
     WinConditionC() = default;
     ~WinConditionC() = default;

@@ -122,3 +122,44 @@ material CoinMaterial
         }
     }
 }
+
+material WinMenuBackgroundTexture
+{
+    technique 
+    {
+        pass 
+        {
+            texture_unit texture0 
+            {
+                texture lightMap.jpg 2d 
+                tex_address_mode wrap 
+                filtering bilinear 
+            }
+            texture_unit texture1 
+            {
+                texture YouWinBackground.png 2d
+            }
+        } 
+    }
+}
+
+material LoseMenuBackgroundTexture
+{
+    technique 
+    {
+        pass 
+        {
+            texture_unit texture0 
+            {
+                texture lightMap.jpg 2d 
+                tex_address_mode wrap 
+                filtering bilinear 
+            }
+            texture_unit texture1 
+            {
+                texture YouLoseBackground.png 2d
+                tex_address_mode wrap
+            }
+        } 
+    }
+}

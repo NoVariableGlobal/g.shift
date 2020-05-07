@@ -1,15 +1,32 @@
 {
   "entities": [
+    // Title
     {
-     "id": "WinEnding",
+      "id": "YouWinText",
       "components": [
         {
-          "type": "GuiImageComponent",
+          "type": "GuiLabelComponent",
           "attributes": {
-            "image": "TaharezLook/YouLoseScreen",
-            "position": [ 0, 0 ],
-            "size": [ 500.0, 200.0 ],
-            "name": "MainMenuTitle"
+            "text": "YOU WIN!",
+            "position": [ 0.45, 0.15 ],
+            "size": [ 150.0, 50.0 ],
+            "name": "GameOverTitle"
+          }
+        }
+      ]
+    },
+    // Background Picture
+    {
+      "id": "BackgroundPictureMenu",
+      "persistent": false,
+      "components": [
+        {
+          "type": "SkyPlaneObjectC",
+          "attributes": {
+            "normal": "Z",
+            "distance": -80,
+            "bow": 0.0,
+            "material": "WinMenuBackgroundTexture"
           }
         }
       ]
@@ -22,7 +39,7 @@
           "type": "ChangeSceneButtonComponent",
           "attributes": {
             "text": "Try Again",
-            "position": [ 0.44, 0.7 ],
+            "position": [ 0.45, 0.7 ],
             "size": [ 120.0, 40.0 ],
             "name": "ReturnToGame",
             "scene": "Game"
@@ -38,14 +55,14 @@
           "type": "QuitButtonComponent",
           "attributes": {
             "text": "Quit",
-            "position": [ 0.44, 0.8 ],
+            "position": [ 0.45, 0.8 ],
             "size": [ 120.0, 40.0 ],
             "name": "QuitGame"
           }
         }
       ]
     },
-    // Camera
+    // Menu Camera
     {
       "id": "Camera",
       "persistent": false,
@@ -55,17 +72,38 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 3, 3, 3 ]
+            "scale": [ 1, 1, 1 ]
           }
         },
         {
           "type": "CameraRC",
           "attributes": {
             "node": "nCamera",
-            "viewportColour": [ 0, 0, 0 ],
-            "offset": [ 0, 300, 60 ],
-            "lookAt": [ 0, -1, -0.25 ],
+            "viewportColour": [ 0.1, 0.1, 0.1 ],
+            "offset": [ 0, 0, -1000 ],
+            "lookAt": [ 0, 0, -1 ],
             "targetId": "none"
+          }
+        }
+      ]
+    },
+    // Menu Light
+    {
+      "id": "Light",
+      "persistent": false,
+      "components": [
+        {
+          "type": "AmbientLightC",
+          "attributes": {
+            "colour": [ 0.5, 0.0, 0.5 ]
+          }
+        },
+        {
+          "type": "SpotLightRC",
+          "attributes": {
+            "node": "nSpotLight",
+            "colour": [ 1, 1, 1 ],
+            "direction": [ 0, -1, -1 ]
           }
         }
       ]

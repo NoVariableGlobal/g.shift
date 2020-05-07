@@ -16,9 +16,13 @@ void WinConditionC::destroy() {
 }
 
 void WinConditionC::win() {
-    scene_->changeScene("WinMenu");
-    dynamic_cast<PlayMusicOnStartC*>(father_->getComponent("PlayMusicOnStartC"))
-        ->setMusic("menuMusic");
+    if (!activated) {
+        activated = true;
+        scene_->changeScene("WinMenu");
+        dynamic_cast<PlayMusicOnStartC*>(
+            father_->getComponent("PlayMusicOnStartC"))
+            ->setMusic("menuMusic");
+    }
 }
 
 // FACTROY INFRASTRUCTURE

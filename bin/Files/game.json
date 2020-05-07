@@ -4,6 +4,7 @@
     // Game Camera
     {
       "id": "Camera",
+      "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -18,7 +19,7 @@
           "attributes": {
             "node": "nCamera",
             "viewportColour": [ 0.1, 0.1, 0.1 ],
-            "offset": [ 0, 0, 3000 ],
+            "offset": [ 0, 0, 1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "Player",
             "follow": [ false, true, false ]
@@ -29,6 +30,7 @@
     // Game Light
     {
       "id": "Light",
+      "persistent": false,
       "components": [
         {
           "type": "AmbientLightC",
@@ -49,6 +51,7 @@
     // Game Background
     {
       "id": "Background",
+      "persistent": false,
       "components": [
         {
           "type": "SkyPlaneObjectC",
@@ -64,6 +67,7 @@
     // Game Manager
     {
       "id": "GameManager",
+      "persistent": true,
       "components": [
         {
           "type": "CoinCounterC",
@@ -100,6 +104,7 @@
     // Player Character
     {
       "id": "Player",
+      "persistent": true,
       "components": [
         {
           "type": "TransformComponent",
@@ -121,7 +126,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 100, 0 ],
+            "position": [ 550, 13000, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ -50, 0, 0 ],
@@ -3656,7 +3661,7 @@
     // Spikes Mesh
     /*{
       "id": "SpikeMesh",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3698,7 +3703,7 @@
     // Tutorial Spikes
     {
       "id": "TutorialSpikeSet1",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3730,7 +3735,7 @@
     },
     {
       "id": "TutorialSpikeSet2",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3762,7 +3767,7 @@
     },
     {
       "id": "TutorialSpikeSet3",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3794,7 +3799,7 @@
     },
     {
       "id": "TutorialSpikeSet4",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3828,7 +3833,7 @@
     // First Segment Spikes
     {
       "id": "FirstSegmentSpikeSet1",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3860,7 +3865,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet2",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3892,7 +3897,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet3",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3924,7 +3929,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet4",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3956,7 +3961,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet5",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -3988,7 +3993,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet6",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4020,7 +4025,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet7",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4052,7 +4057,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet8",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4084,7 +4089,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet9",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4116,7 +4121,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet10",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4148,7 +4153,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet11",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4180,7 +4185,7 @@
     },
     {
       "id": "FirstSegmentSpikeSet12",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4214,7 +4219,7 @@
     // Second Segment Spikes
     {
       "id": "SecondSegmentSpikeSet1",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4246,7 +4251,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet2",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4278,7 +4283,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet3",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4310,7 +4315,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet4",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4342,7 +4347,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet5",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4374,7 +4379,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet6",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4406,7 +4411,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet7",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4438,7 +4443,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet8",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4470,7 +4475,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet9",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4502,7 +4507,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet10",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4534,7 +4539,7 @@
     },
     {
       "id": "SecondSegmentSpikeSer11",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4566,7 +4571,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet12",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4598,7 +4603,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet13",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4630,7 +4635,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet14",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4662,7 +4667,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet15",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4694,7 +4699,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet16",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4726,7 +4731,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet17",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4758,7 +4763,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet18",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4790,7 +4795,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet19",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4822,7 +4827,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet20",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4854,7 +4859,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet21",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4886,7 +4891,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet22",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4918,7 +4923,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet23",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4950,7 +4955,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet24",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -4982,7 +4987,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet25",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5014,7 +5019,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet26",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5046,7 +5051,7 @@
     },
     {
       "id": "SecondSegmentSpikeSet27",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5080,7 +5085,7 @@
     // Third Segment Spikes
     {
       "id": "ThirdSegmentSpikeSet1",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5112,7 +5117,7 @@
     },
     {
       "id": "ThirdSegmentSpikeSet2",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5144,7 +5149,7 @@
     },
     {
       "id": "ThirdSegmentSpike4",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5176,7 +5181,7 @@
     },
     {
       "id": "ThirdSegmentSpike4",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5208,7 +5213,7 @@
     },
     {
       "id": "ThirdSegmentSpike5",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5240,7 +5245,7 @@
     },
     {
       "id": "ThirdSegmentSpike6",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5272,7 +5277,7 @@
     },
     {
       "id": "ThirdSegmentSpike7",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5304,7 +5309,7 @@
     },
     {
       "id": "ThirdSegmentSpike8",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5336,7 +5341,7 @@
     },
     {
       "id": "ThirdSegmentSpike9",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5368,7 +5373,7 @@
     },
     {
       "id": "ThirdSegmentSpike10",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5400,7 +5405,7 @@
     },
     {
       "id": "ThirdSegmentSpike11",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5432,7 +5437,7 @@
     },
     {
       "id": "ThirdSegmentSpike12",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5464,7 +5469,7 @@
     },
     {
       "id": "ThirdSegmentSpike13",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5496,7 +5501,7 @@
     },
     {
       "id": "ThirdSegmentSpike14",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5528,7 +5533,7 @@
     },
     {
       "id": "ThirdSegmentSpike15",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5560,7 +5565,7 @@
     },
     {
       "id": "ThirdSegmentSpike16",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5592,7 +5597,7 @@
     },
     {
       "id": "ThirdSegmentSpike17",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5626,7 +5631,7 @@
     // Fourth Segment Spikes
     {
       "id": "FourthSegmentSpike1",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5658,7 +5663,7 @@
     },
     {
       "id": "FourthSegmentSpike2",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5690,7 +5695,7 @@
     },
     {
       "id": "FourthSegmentSpike3",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5722,7 +5727,7 @@
     },
     {
       "id": "FourthSegmentSpike4",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5754,7 +5759,7 @@
     },
     {
       "id": "FourthSegmentSpike5",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5786,7 +5791,7 @@
     },
     {
       "id": "FourthSegmentSpike6",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5818,7 +5823,7 @@
     },
     {
       "id": "FourthSegmentSpike7",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5850,7 +5855,7 @@
     },
     {
       "id": "FourthSegmentSpike8",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5882,7 +5887,7 @@
     },
     {
       "id": "FourthSegmentSpike9",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5914,7 +5919,7 @@
     },
     {
       "id": "FourthSegmentSpike10",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false, "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5946,7 +5951,7 @@
     },
     {
       "id": "FourthSegmentSpike11",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -5978,7 +5983,7 @@
     },
     {
       "id": "FourthSegmentSpike12",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6010,7 +6015,7 @@
     },
     {
       "id": "FourthSegmentSpike13",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6042,7 +6047,7 @@
     },
     {
       "id": "FourthSegmentSpike14",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6074,7 +6079,7 @@
     },
     {
       "id": "FourthSegmentSpike15",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6106,7 +6111,7 @@
     },
     {
       "id": "FourthSegmentSpike16",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6138,7 +6143,7 @@
     },
     {
       "id": "FourthSegmentSpike17",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6170,7 +6175,7 @@
     },
     {
       "id": "FourthSegmentSpike18",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6202,7 +6207,7 @@
     },
     {
       "id": "FourthSegmentSpike19",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6234,7 +6239,7 @@
     },
     {
       "id": "FourthSegmentSpike20",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6266,7 +6271,7 @@
     },
     {
       "id": "FourthSegmentSpike21",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -6298,7 +6303,7 @@
     },
     {
       "id": "FourthSegmentSpike22",
-      "tag": "Spike",
+      "tag": "Spike", "persistent": false,
       "components": [
         {
           "type": "TransformComponent",

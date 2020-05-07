@@ -1,8 +1,40 @@
 {
   "entities": [
-    // Camera
+    // Background Picture
+    {
+      "id": "BackgroundPictureMenu",
+      "persistent": false,
+      "components": [
+        {
+          "type": "SkyPlaneObjectC",
+          "attributes": {
+            "normal": "Z",
+            "distance": -80,
+            "bow": 0.0,
+            "material": "LoseMenuBackgroundTexture"
+          }
+        }
+      ]
+    },
+    // Title
+    {
+      "id": "GameOver",
+      "components": [
+        {
+          "type": "GuiLabelComponent",
+          "attributes": {
+            "text": "GAME OVER",
+            "position": [ 0.45, 0.15 ],
+            "size": [ 300.0, 100.0 ],
+            "name": "GameOverTitle"
+          }
+        }
+      ]
+    },
+    // Menu Camera
     {
       "id": "Camera",
+      "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -17,9 +49,22 @@
           "attributes": {
             "node": "nCamera",
             "viewportColour": [ 0.1, 0.1, 0.1 ],
-            "offset": [ 0, 0, 1000 ],
+            "offset": [ 0, 0, -1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "none"
+          }
+        }
+      ]
+    },
+    // Menu Light
+    {
+      "id": "Light",
+      "persistent": false,
+      "components": [
+        {
+          "type": "AmbientLightC",
+          "attributes": {
+            "colour": [ 0.5, 0.0, 0.5 ]
           }
         },
         {
@@ -39,8 +84,8 @@
         {
           "type": "ChangeSceneButtonComponent",
           "attributes": {
-            "text": "Play",
-            "position": [ 0.44, 0.5 ],
+            "text": "Try Again",
+            "position": [ 0.44, 0.7 ],
             "size": [ 120.0, 40.0 ],
             "name": "ReturnToGame",
             "scene": "Game"
@@ -55,10 +100,10 @@
         {
           "type": "QuitButtonComponent",
           "attributes": {
-            "text": "Quit",
+            "text": "Quit Game",
             "position": [ 0.44, 0.8 ],
             "size": [ 120.0, 40.0 ],
-            "name": "DeadMenu"
+            "name": "QuitGame"
           }
         }
       ]
