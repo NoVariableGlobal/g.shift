@@ -1,12 +1,20 @@
-{"scenes":
-	[
+{
+	"scenes": [
 		{
-			"name" : "Game",
-			"file" : "game.json"
+			"name": "Game",
+			"file": "game.json"
 		},
 		{
-			"name" : "DeadMenu",
-			"file" : "dead_menu.json"
+			"name": "DeadMenu",
+			"file": "dead_menu.json"
+		},
+		{
+			"name": "mainmenu",
+			"file": "mainmenu.json"
+		},
+		{
+			"name": "options",
+			"file": "options.json"
 		}
 	]
 
