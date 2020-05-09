@@ -16,21 +16,6 @@
         }
       ]
     },
-    // Title
-    {
-      "id": "GameOver",
-      "components": [
-        {
-          "type": "GuiLabelComponent",
-          "attributes": {
-            "text": "GAME OVER",
-            "position": [ 0.45, 0.15 ],
-            "size": [ 300.0, 100.0 ],
-            "name": "GameOverTitle"
-          }
-        }
-      ]
-    },
     // Menu Camera
     {
       "id": "Camera",
@@ -82,7 +67,7 @@
       "id": "ReturnButton",
       "components": [
         {
-          "type": "ChangeSceneButtonComponent",
+          "type": "ChangeAndClearSceneButtonComponent",
           "attributes": {
             "text": "Try Again",
             "position": [ 0.44, 0.7 ],
@@ -104,6 +89,25 @@
             "position": [ 0.44, 0.8 ],
             "size": [ 120.0, 40.0 ],
             "name": "QuitGame"
+          }
+        }
+      ]
+    },
+    // Sound Manager
+    {
+      "id": "SoundManager",
+      "persistent": false,
+      "components": [
+        {
+          "type": "SoundComponent",
+          "attributes": {
+            "sounds": [ "menuMusic" ]
+          }
+        },
+        {
+          "type": "PlayMusicOnStartC",
+          "attributes": {
+            "sound": "menuMusic"
           }
         }
       ]

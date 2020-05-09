@@ -8,8 +8,6 @@
 
 #include <json.h>
 
-#include <iostream>
-
 void WinConditionC::destroy() {
     setActive(false);
     scene_->getComponentsManager()->eraseDC(this);

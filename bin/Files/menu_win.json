@@ -1,20 +1,5 @@
 {
   "entities": [
-    // Title
-    {
-      "id": "YouWinText",
-      "components": [
-        {
-          "type": "GuiLabelComponent",
-          "attributes": {
-            "text": "YOU WIN!",
-            "position": [ 0.45, 0.15 ],
-            "size": [ 150.0, 50.0 ],
-            "name": "GameOverTitle"
-          }
-        }
-      ]
-    },
     // Background Picture
     {
       "id": "BackgroundPictureMenu",
@@ -34,9 +19,10 @@
     // Retry Button
     {
       "id": "ReturnButton",
+      "persistent": false,
       "components": [
         {
-          "type": "ChangeSceneButtonComponent",
+          "type": "ChangeAndClearSceneButtonComponent",
           "attributes": {
             "text": "Try Again",
             "position": [ 0.45, 0.7 ],
@@ -80,16 +66,17 @@
           "attributes": {
             "node": "nCamera",
             "viewportColour": [ 0.1, 0.1, 0.1 ],
-            "offset": [ 0, 0, -1000 ],
+            "offset": [ 0, 0, 1000 ],
             "lookAt": [ 0, 0, -1 ],
-            "targetId": "none"
+            "targetId": "none",
+            "follow": [ false, false, false ]
           }
         }
       ]
     },
     // Menu Light
     {
-      "id": "Light",
+      "id": "LightWinMenu",
       "persistent": false,
       "components": [
         {
@@ -104,6 +91,25 @@
             "node": "nSpotLight",
             "colour": [ 1, 1, 1 ],
             "direction": [ 0, -1, -1 ]
+          }
+        }
+      ]
+    },
+    // Sound Manager
+    {
+      "id": "SoundManager",
+      "persistent": false,
+      "components": [
+        {
+          "type": "SoundComponent",
+          "attributes": {
+            "sounds": [ "menuMusic" ]
+          }
+        },
+        {
+          "type": "PlayMusicOnStartC",
+          "attributes": {
+            "sound": "menuMusic"
           }
         }
       ]

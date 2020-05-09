@@ -7,7 +7,6 @@ DECLARE_FACTORY(SpikeEC);
 
 class SpikeEC : public EventComponent {
   private:
-    bool collisioned = false;
 
   public:
     SpikeEC() = default;
