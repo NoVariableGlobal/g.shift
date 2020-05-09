@@ -12,7 +12,7 @@ class DeathControllerC : public Component {
     // value of the collectable
     int coinsPicked_;
 
-	bool activated = false;
+    bool activated = false;
 
   public:
     DeathControllerC() = default;

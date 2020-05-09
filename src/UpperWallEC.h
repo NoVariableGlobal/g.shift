@@ -10,6 +10,6 @@ class UpperWallEC : public EventComponent {
     UpperWallEC() = default;
     ~UpperWallEC() = default;
 
-	virtual void destroy();
+    virtual void destroy();
     virtual void checkEvent();
 };

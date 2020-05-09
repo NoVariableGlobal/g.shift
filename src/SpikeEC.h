@@ -7,11 +7,10 @@ DECLARE_FACTORY(SpikeEC);
 
 class SpikeEC : public EventComponent {
   private:
-
   public:
     SpikeEC() = default;
     ~SpikeEC() = default;
 
-	virtual void destroy();
+    virtual void destroy();
     virtual void checkEvent();
 };
