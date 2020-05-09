@@ -4,13 +4,15 @@ jugador va subiendo constantemente. En el camino hay varios obstáculos, ya sean
 bloques, picos, huecos, o una combinación de los tres y la ambición de querer
 obtener todas las monedas que se hayan perdidas flotando por el camino.
 
-En un nivel más técnico, el mapa deberá estar formado por cuatro partes:
+En un nivel más técnico, el mapa deberá estar formado por cinco partes:
 1. Una mesh hecha exclusivamente para el lado izquierdo del mapa.
 2. Una mesh hecha exclusivamente para el lado derecho del mapa.
 3. Una mesh para los picos del mapa (de otra forma, el juego podrá ser experimentado 
    en cámara lenta por el desarrollador (!!!))
 4. En el documento .json donde se ha de definir el nivel, agregar manualmente las
    mallas para dar rigidez a los cuerpos del juego.
+5. No olvides poner un bloque al final del tubo, con un componente que indique que
+   lo es. De otra forma te perderás en las estrellas.
 
 Recuerda, G·Shift es un juego para descubrir nuevos horizontes y retar a los diseños
 convencionales, pero asegurate de no ir demasiado rápido, y recordar usar en su caso
