@@ -21,8 +21,9 @@ void GuiCoinsPickedLabelC::createText() {
         reinterpret_cast<CoinCounterC*>(
             scene_->getEntityById("CoinManager")->getComponent("CoinCounterC"))
             ->getTotalCoins();
-    
-	std::string coinsPicked = std::to_string(coins) + "/" + std::to_string(totalCoins);
+
+    std::string coinsPicked =
+        std::to_string(coins) + "/" + std::to_string(totalCoins);
 
     setText(coinsPicked);
 }
