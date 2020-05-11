@@ -4,14 +4,14 @@
 			"name" : "Game",
 			"file" : "game.json"
 		},
-    {
-      "name": "DeadMenu",
-      "file": "menu_dead.json"
-    },
-    {
-      "name": "WinMenu",
-      "file":  "menu_win.json"
-    }
+		{
+		  "name": "DeadMenu",
+		  "file": "menu_dead.json"
+		},
+		{
+		  "name": "WinMenu",
+		  "file": "menu_win.json"
+		}
 	]
 
 }

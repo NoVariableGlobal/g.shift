@@ -63,16 +63,27 @@
         }
       ]
     },
-    // Game Manager
+    // Coin Manager
     {
-      "id": "GameManager",
-      "persistent": false,
+      "id": "CoinManager",
+      "persistent": true,
       "components": [
         {
           "type": "CoinCounterC",
           "attributes": {
             "totalCoins": 23
           }
+        }
+      ]
+    },
+    // Game Manager
+    {
+      "id": "GameManager",
+      "persistent": false,
+      "components": [
+        {
+          "type": "WinConditionC",
+          "attributes": {}
         },
         {
           "type": "DeathControllerC",
@@ -93,10 +104,6 @@
           "attributes": {
             "sound": "gameMusic"
           }
-        },
-        {
-          "type": "WinConditionC",
-          "attributes": {}
         }
       ]
     },
@@ -154,7 +161,7 @@
           "type": "OutOfBoundsEC",
           "attributes": {
             "LeftBorder": -530, // This value is the "real" border of the game
-            "RightBorder": 530  // This value is the "real" border of the game
+            "RightBorder": 530 // This value is the "real" border of the game
           }
         },
         {
@@ -3791,7 +3798,6 @@
         }
       ]
     },
-
     // First Segment Spikes
     {
       "id": "FirstSegmentSpikeSet1",

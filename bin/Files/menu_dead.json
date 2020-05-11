@@ -9,7 +9,7 @@
           "type": "SkyPlaneObjectC",
           "attributes": {
             "normal": "Z",
-            "distance": -80,
+            "distance": -120,
             "bow": 0.0,
             "material": "LoseMenuBackgroundTexture"
           }
@@ -33,10 +33,39 @@
           "type": "CameraRC",
           "attributes": {
             "node": "nCamera",
-            "viewportColour": [ 0.1, 0.1, 0.1 ],
+            "viewportColour": [ 0.0, 0.0, 0.0 ],
             "offset": [ 0, 0, -1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "none"
+          }
+        }
+      ]
+    },
+    // Coins Picked Label
+    {
+      "id": "Coins",
+      "components": [
+        {
+          "type": "GuiLabelComponent",
+          "attributes": {
+            "text": "Coins Picked: ",
+            "position": [ 0.4, 0.6 ],
+            "size": [ 200.0, 50.0 ],
+            "name": "Coins"
+          }
+        }
+      ]
+    },
+    // Coin Counter
+    {
+      "id": "CoinCounter",
+      "components": [
+        {
+          "type": "GuiCoinsPickedLabelC",
+          "attributes": {
+            "position": [ 0.6, 0.6 ],
+            "size": [ 200.0, 50.0 ],
+            "name": "CoinsCounter"
           }
         }
       ]
