@@ -17,7 +17,7 @@
           "type": "CameraRC",
           "attributes": {
             "node": "nCamera",
-            "viewportColour": [ 0.1, 0.1, 0.1 ],
+            "viewportColour": [ 0.0, 0.0, 0.0 ],
             "offset": [ 0, 0, 1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "Player",
@@ -153,8 +153,8 @@
         {
           "type": "OutOfBoundsEC",
           "attributes": {
-            "LeftBorder": -650, // This value is the "real" border of the game
-            "RightBorder": 650 // This value is the "real" border of the game
+            "LeftBorder": -530, // This value is the "real" border of the game
+            "RightBorder": 530  // This value is the "real" border of the game
           }
         },
         {
@@ -1604,7 +1604,7 @@
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "gshift_level_1.mesh",
+            "mesh": "GSHIFT_LEVEL_1_cubes.mesh",
             "node": "nCube",
             "material": "PinkColourMaterial"
           }
@@ -2400,7 +2400,7 @@
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",    
+            "mesh": "cube.mesh",
             "node": "nCube",
             "material": "CoinMaterial"
           }
@@ -3622,6 +3622,46 @@
     },
 
     // Spikes RB
+    {
+      "id": "SPIKE_MESH",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 50, 50, 50 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spikes.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -500, -800, 0 ],
+            "shape": [ 0, 0, 0 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
     // Tutorial Spikes
     {
       "id": "TutorialSpikeSet1",
