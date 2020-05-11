@@ -1,15 +1,29 @@
 {
   "entities": [
-    /*{
+    {
       "id": "TitleImage",
       "components": [
         {
           "type": "GuiImageComponent",
           "attributes": {
-            "image": "TaharezLook/GShift",
-            "position": [ 0.18, 0.1 ],
+            "image": "TaharezLook/GameLogo",
+            "position": [ 0.35, 0.1 ],
             "size": [ 500.0, 200.0 ],
             "name": "MainMenuTitle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "Background",
+      "components": [
+        {
+          "type": "SkyPlaneObjectC",
+          "attributes": {
+            "normal": "Z",
+            "distance": -100,
+            "bow": 0.0,
+            "material": "BackgroundMenuTexture"
           }
         }
       ]
@@ -21,13 +35,13 @@
           "type": "GuiImageComponent",
           "attributes": {
             "image": "TaharezLook/NotVariableGlobal",
-            "position": [ 0.85, 0.8 ],
+            "position": [ 0.8, 0.8 ],
             "size": [ 100.0, 100.0 ],
             "name": "MainMenuLogo"
           }
         }
       ]
-    },*/
+    },
     {
       "id": "PlayButton",
       "components": [
@@ -78,7 +92,7 @@
         {
           "type": "TransformComponent",
           "attributes": {
-            "position": [ 582, 0, 0 ],
+            "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
             "scale": [ 0.4, 0.4, 0.4 ]
 
@@ -108,7 +122,30 @@
           "attributes": {
             "name": "Sparks"
           }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -580, 0, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ -50, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": false,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "ChangeGravityIC",
+          "attributes": {
+            "speed": 250,
+            "colourL": [ 0.5, 0, 0.5 ],
+            "colourR": [ 0, 0, 0.8 ]
+          }
         }
+
       ]
     },
     {
@@ -128,6 +165,20 @@
             "mesh": "cube.mesh",
             "node": "nCube",
             "material": "PinkColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 700, 0, 0 ],
+            "shape": [ 100, 900, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
           }
         }
       ]
@@ -149,6 +200,20 @@
             "mesh": "cube.mesh",
             "node": "nCube",
             "material": "BlueColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -700, 0, 0 ],
+            "shape": [ 100, 900, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
           }
         }
       ]
