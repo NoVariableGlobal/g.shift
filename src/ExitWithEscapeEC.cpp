@@ -37,7 +37,7 @@ void ExitWithEscapeEC::checkEvent() {
 
         float seconds = clock() / static_cast<float>(CLOCKS_PER_SEC);
         if (seconds - startTime >= timeToExit) {
-            scene_->changeScene("mainmenu", true);
+            scene_->changeScene("InitialLoad", true);
             out = true;
         } else
             label->setAlpha((seconds - startTime) / 2);
