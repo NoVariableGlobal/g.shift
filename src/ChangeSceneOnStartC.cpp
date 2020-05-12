@@ -16,7 +16,7 @@ ChangeSceneOnStartCFactory::ChangeSceneOnStartCFactory() = default;
 
 Component* ChangeSceneOnStartCFactory::create(Entity* _father,
                                               Json::Value& _data,
-                                           Scene* _scene) {
+                                              Scene* _scene) {
     ChangeSceneOnStartC* controller = new ChangeSceneOnStartC();
     _scene->getComponentsManager()->addDC(controller);
 
