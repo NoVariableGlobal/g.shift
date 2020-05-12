@@ -28,7 +28,6 @@
     }, // Game Camera
     {
       "id": "Camera",
-      "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -54,7 +53,6 @@
     // Game Light
     {
       "id": "Light",
-      "persistent": false,
       "components": [
         {
           "type": "AmbientLightC",
@@ -75,7 +73,6 @@
     // Game Background
     {
       "id": "Background",
-      "persistent": false,
       "components": [
         {
           "type": "SkyPlaneObjectC",
@@ -109,7 +106,7 @@
         {
           "type": "SoundComponent",
           "attributes": {
-            "sounds": [ "gameMusic", "menuMusic" ]
+            "sounds": [ "gameMusic", "endMusic" ]
           }
         },
         {
@@ -123,7 +120,6 @@
     // Game Manager
     {
       "id": "GameManager",
-      "persistent": false,
       "components": [
         {
           "type": "WinConditionC",
@@ -142,7 +138,6 @@
     // Player Character
     {
       "id": "Player",
-      "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
