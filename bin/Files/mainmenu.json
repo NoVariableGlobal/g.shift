@@ -16,6 +16,7 @@
     },
     {
       "id": "Background",
+      "persistent": true,
       "components": [
         {
           "type": "SkyPlaneObjectC",
@@ -24,6 +25,24 @@
             "distance": -100,
             "bow": 0.0,
             "material": "BackgroundMenuTexture"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MusicManager",
+      "persistent":  true,
+      "components": [
+        {
+          "type": "SoundComponent",
+          "attributes": {
+            "sounds": [ "menuMusic" ]
+          }
+        },
+        {
+          "type": "PlayMusicOnStartC",
+          "attributes": {
+            "sound": "menuMusic"
           }
         }
       ]
@@ -46,7 +65,7 @@
       "id": "PlayButton",
       "components": [
         {
-          "type": "ChangeSceneButtonComponent",
+          "type": "ChangeAndClearSceneButtonComponent",
           "attributes": {
             "text": "Play",
             "position": [ 0.467, 0.6 ],
