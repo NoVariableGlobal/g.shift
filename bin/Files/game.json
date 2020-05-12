@@ -76,6 +76,25 @@
         }
       ]
     },
+    // Music Manager
+    {
+      "id": "MusicManager",
+      "persistent":  true,
+      "components": [
+        {
+          "type": "SoundComponent",
+          "attributes": {
+            "sounds": [ "gameMusic", "menuMusic" ]
+          }
+        },
+        {
+          "type": "PlayMusicOnStartC",
+          "attributes": {
+            "sound": "gameMusic"
+          }
+        }
+      ]
+    },
     // Game Manager
     {
       "id": "GameManager",
@@ -92,18 +111,6 @@
         {
           "type": "DeathStopEC",
           "attributes": {}
-        },
-        {
-          "type": "SoundComponent",
-          "attributes": {
-            "sounds": [ "gameMusic" ]
-          }
-        },
-        {
-          "type": "PlayMusicOnStartC",
-          "attributes": {
-            "sound": "gameMusic"
-          }
         }
       ]
     },

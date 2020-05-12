@@ -32,17 +32,17 @@
         }
       ]
     },
-    // Quit Button
+    // Main Menu Button (todavia cierra el juego)
     {
-      "id": "QuitButton",
+      "id": "MainMenuButton",
       "components": [
         {
           "type": "QuitButtonComponent",
           "attributes": {
-            "text": "Quit",
+            "text": "Main Menu",
             "position": [ 0.45, 0.8 ],
             "size": [ 120.0, 40.0 ],
-            "name": "QuitGame"
+            "name": "MainMenu"
           }
         }
       ]
@@ -120,25 +120,6 @@
             "node": "nSpotLight",
             "colour": [ 1, 1, 1 ],
             "direction": [ 0, -1, -1 ]
-          }
-        }
-      ]
-    },
-    // Sound Manager
-    {
-      "id": "SoundManager",
-      "persistent": false,
-      "components": [
-        {
-          "type": "SoundComponent",
-          "attributes": {
-            "sounds": [ "menuMusic" ]
-          }
-        },
-        {
-          "type": "PlayMusicOnStartC",
-          "attributes": {
-            "sound": "menuMusic"
           }
         }
       ]

@@ -107,36 +107,17 @@
         }
       ]
     },
-    // Quit Button
+    // Main Menu Button
     {
-      "id": "QuitButton",
+      "id": "MainMenuButton",
       "components": [
         {
           "type": "QuitButtonComponent",
           "attributes": {
-            "text": "Quit Game",
+            "text": "Main Menu",
             "position": [ 0.44, 0.8 ],
             "size": [ 120.0, 40.0 ],
-            "name": "QuitGame"
-          }
-        }
-      ]
-    },
-    // Sound Manager
-    {
-      "id": "SoundManager",
-      "persistent": false,
-      "components": [
-        {
-          "type": "SoundComponent",
-          "attributes": {
-            "sounds": [ "menuMusic" ]
-          }
-        },
-        {
-          "type": "PlayMusicOnStartC",
-          "attributes": {
-            "sound": "menuMusic"
+            "name": "MainMenu"
           }
         }
       ]
