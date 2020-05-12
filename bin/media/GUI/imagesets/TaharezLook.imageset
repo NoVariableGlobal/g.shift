@@ -1,5 +1,5 @@
 <Imageset autoScaled="vertical" imagefile="TaharezLook.png" name="TaharezLook" nativeHorzRes="1280" nativeVertRes="720" version="2">
-    <Image height="439" name="GameLogo" width="720" xPos="481" yPos="0" />
+    <Image height="378" name="GameLogo" width="720" xPos="481" yPos="0" />
 	<Image height="200" name="NotVariableGlobal" width="160" xPos="320" yPos="0" />
 	<Image height="64" name="Button1" width="64" xPos="120" yPos="300" />
 	<Image height="64" name="Button2" width="64" xPos="130" yPos="300" />
