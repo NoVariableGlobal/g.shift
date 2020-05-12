@@ -118,7 +118,7 @@
             "position": [ 0.44, 0.8 ],
             "size": [ 120.0, 40.0 ],
             "name": "MainMenuButton",
-            "scene": "mainmenu"
+            "scene": "InitialLoad"
           }
         }
       ]

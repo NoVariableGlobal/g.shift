@@ -1,6 +1,10 @@
 {
 	"scenes": [
 		{
+		  "name": "InitialLoad",
+		  "file": "initial_load.json"
+		},
+		{
 			"name": "Game",
 			"file": "game.json"
 		},
