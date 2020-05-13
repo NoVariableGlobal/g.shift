@@ -1,25 +1,7 @@
 {
   "entities": [
-    // Background Picture
-    {
-      "id": "BackgroundPictureMenu",
-      "persistent": false,
-      "components": [
-        {
-          "type": "SkyPlaneObjectC",
-          "attributes": {
-            "normal": "Z",
-            "distance": -120,
-            "bow": 0.0,
-            "material": "LoseMenuBackgroundTexture"
-          }
-        }
-      ]
-    },
-    // Menu Camera
     {
       "id": "Camera",
-      "persistent": false,
       "components": [
         {
           "type": "TransformComponent",
@@ -34,43 +16,41 @@
           "attributes": {
             "node": "nCamera",
             "viewportColour": [ 0.0, 0.0, 0.0 ],
-            "offset": [ 0, 0, -1000 ],
+            "offset": [ 0, 0, 1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "none"
           }
         }
       ]
     },
-    // Coins Picked Label
     {
-      "id": "Coins",
+      "id": "BackgroundPictureMenu",
       "components": [
         {
-          "type": "GuiLabelComponent",
+          "type": "SkyPlaneObjectC",
           "attributes": {
-            "text": "Coins Picked: ",
-            "position": [ 0.4, 0.6 ],
-            "size": [ 200.0, 50.0 ],
-            "name": "Coins"
+            "normal": "Z",
+            "distance": -100,
+            "bow": 0.0,
+            "material": "BackgroundEndTexture"
           }
         }
       ]
     },
-    // Coin Counter
     {
-      "id": "CoinCounter",
+      "id": "TitleImage",
       "components": [
         {
-          "type": "GuiCoinsPickedLabelC",
+          "type": "GuiImageComponent",
           "attributes": {
-            "position": [ 0.6, 0.6 ],
-            "size": [ 200.0, 50.0 ],
-            "name": "CoinsCounter"
+            "image": "TaharezLook/Lose",
+            "position": [ 0.33, 0.1 ],
+            "size": [ 652.0, 344.0 ],
+            "name": "LoseTitle"
           }
         }
       ]
     },
-    // Menu Light
     {
       "id": "Light",
       "persistent": false,
@@ -91,7 +71,6 @@
         }
       ]
     },
-    // Retry Button
     {
       "id": "ReturnButton",
       "components": [
@@ -99,7 +78,7 @@
           "type": "ChangeAndClearSceneButtonComponent",
           "attributes": {
             "text": "Try Again",
-            "position": [ 0.44, 0.7 ],
+            "position": [ 0.467, 0.8 ],
             "size": [ 120.0, 40.0 ],
             "name": "ReturnToGame",
             "scene": "Game"
@@ -107,7 +86,6 @@
         }
       ]
     },
-    // Main Menu Button
     {
       "id": "MainMenuButton",
       "components": [
@@ -115,10 +93,63 @@
           "type": "ChangeAndClearSceneButtonComponent",
           "attributes": {
             "text": "Main Menu",
-            "position": [ 0.44, 0.8 ],
+            "position": [ 0.467, 0.85 ],
             "size": [ 120.0, 40.0 ],
             "name": "MainMenuButton",
             "scene": "InitialLoad"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CoinCounter",
+      "components": [
+        {
+          "type": "GuiCoinsPickedLabelC",
+          "attributes": {
+            "position": [ 0.5, 0.49 ],
+            "size": [ 200.0, 50.0 ],
+            "name": "CoinsCounter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TutorialCoin1",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ -50, -10, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 25, 25, 25 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "gshift_coin.mesh",
+            "node": "nCoin",
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
+          }
+        },
+        {
+          "type": "PlayAnimationOnStartC",
+          "attributes": {
+            "animation": "idle"
           }
         }
       ]
