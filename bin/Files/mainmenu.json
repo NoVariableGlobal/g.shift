@@ -35,8 +35,8 @@
           "type": "GuiImageComponent",
           "attributes": {
             "image": "TaharezLook/NotVariableGlobal",
-            "position": [ 0.75, 0.8 ],
-            "size": [ 200.0, 200.0 ],
+            "position": [ 0.84, 0.9 ],
+            "size": [ 80.0, 100.0 ],
             "name": "MainMenuLogo"
           }
         }
