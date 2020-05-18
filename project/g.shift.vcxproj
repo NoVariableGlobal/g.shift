@@ -22,6 +22,7 @@
     <ClCompile Include="..\src\ChangeGravityIC.cpp" />
     <ClCompile Include="..\src\ChangeSceneOnStartC.cpp" />
     <ClCompile Include="..\src\CoinCounterC.cpp" />
+    <ClCompile Include="..\src\CoinsLabelC.cpp" />
     <ClCompile Include="..\src\CollectableEC.cpp" />
     <ClCompile Include="..\src\ConstantMovementC.cpp" />
     <ClCompile Include="..\src\DeathControllerC.cpp" />
@@ -42,6 +43,7 @@
     <ClInclude Include="..\src\ChangeGravityIC.h" />
     <ClInclude Include="..\src\ChangeSceneOnStartC.h" />
     <ClInclude Include="..\src\CoinCounterC.h" />
+    <ClInclude Include="..\src\CoinsLabelC.h" />
     <ClInclude Include="..\src\CollectableEC.h" />
     <ClInclude Include="..\src\ConstantMovementC.h" />
     <ClInclude Include="..\src\DeathControllerC.h" />
