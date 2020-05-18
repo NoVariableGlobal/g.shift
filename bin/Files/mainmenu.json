@@ -259,6 +259,17 @@
           }
         }
       ]
+    },
+    {
+      "id": "Basics",
+      "components": [
+        {
+          "type": "MousePropertiesC",
+          "attributes": {
+            "visible": true
+          }
+        }
+      ]
     }
   ]
 }

@@ -24,6 +24,37 @@
       ]
     },
     {
+      "id": "Light",
+      "persistent": false,
+      "components": [
+        {
+          "type": "AmbientLightC",
+          "attributes": {
+            "colour": [ 0.5, 0.0, 0.5 ]
+          }
+        },
+        {
+          "type": "SpotLightRC",
+          "attributes": {
+            "node": "nSpotLight",
+            "colour": [ 1, 1, 1 ],
+            "direction": [ 0, -1, -1 ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "Basics",
+      "components": [
+        {
+          "type": "MousePropertiesC",
+          "attributes": {
+            "visible": true
+          }
+        }
+      ]
+    },
+    {
       "id": "BackgroundPictureMenu",
       "components": [
         {
@@ -47,26 +78,6 @@
             "position": [ 0.33, 0.1 ],
             "size": [ 652.0, 344.0 ],
             "name": "LoseTitle"
-          }
-        }
-      ]
-    },
-    {
-      "id": "Light",
-      "persistent": false,
-      "components": [
-        {
-          "type": "AmbientLightC",
-          "attributes": {
-            "colour": [ 0.5, 0.0, 0.5 ]
-          }
-        },
-        {
-          "type": "SpotLightRC",
-          "attributes": {
-            "node": "nSpotLight",
-            "colour": [ 1, 1, 1 ],
-            "direction": [ 0, -1, -1 ]
           }
         }
       ]

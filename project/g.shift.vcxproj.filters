@@ -66,6 +66,9 @@
     <ClCompile Include="..\src\PlayAnimationOnStartC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\MousePropertiesC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\ChangeGravityIC.h">
@@ -114,6 +117,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\PlayAnimationOnStartC.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MousePropertiesC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

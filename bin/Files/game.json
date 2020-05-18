@@ -45,6 +45,17 @@
         }
       ]
     },
+    {
+      "id": "Basics",
+      "components": [
+        {
+          "type": "MousePropertiesC",
+          "attributes": {
+            "visible": false
+          }
+        }
+      ]
+    },
     // Game Background
     {
       "id": "Background",
