@@ -2,8 +2,8 @@
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
-#include "Scene.h"
 #include "GuiContext.h"
+#include "Scene.h"
 
 #include <json.h>
 
@@ -18,7 +18,7 @@ void MousePropertiesC::destroy() {
 MousePropertiesCFactory::MousePropertiesCFactory() = default;
 
 Component* MousePropertiesCFactory::create(Entity* _father, Json::Value& _data,
-                                       Scene* _scene) {
+                                           Scene* _scene) {
     MousePropertiesC* mouse = new MousePropertiesC();
     _scene->getComponentsManager()->addDC(mouse);
 
