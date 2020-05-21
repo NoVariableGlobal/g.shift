@@ -21,7 +21,7 @@
           "type": "GuiImageComponent",
           "attributes": {
             "image": "TaharezLook/ControlsTitle",
-            "position": [ 0.35, 0.1 ],
+            "position": [ 0.35, 0.15 ],
             "size": [ 568.0, 76.0 ],
             "name": "ControlsTitle"
           }
@@ -36,7 +36,7 @@
           "attributes": {
             "image": "TaharezLook/Controls",
             "position": [ 0.32, 0.3 ],
-            "size": [ 691.0, 457.0 ],
+            "size": [ 706.0, 473.0 ],
             "name": "Controls"
           }
         }
