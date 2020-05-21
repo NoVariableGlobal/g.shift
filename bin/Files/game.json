@@ -26,30 +26,7 @@
         }
       ]
     }, // Game Camera
-    {
-      "id": "Camera",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ]
-          }
-        },
-        {
-          "type": "CameraRC",
-          "attributes": {
-            "node": "nCamera",
-            "viewportColour": [ 0.0, 0.0, 0.0 ],
-            "offset": [ 0, 0, 1000 ],
-            "lookAt": [ 0, 0, -1 ],
-            "targetId": "Player",
-            "follow": [ false, true, false ]
-          }
-        }
-      ]
-    },
+    
     // Game Light
     {
       "id": "Light",
@@ -139,11 +116,11 @@
         {
           "type": "DeathControllerC",
           "attributes": {}
-        },
+        }/*,
         {
           "type": "DeathStopEC",
           "attributes": {}
-        }
+        }*/
       ]
     },
     // Player Character
@@ -3780,7 +3757,7 @@
           "attributes": {}
         }
       ]
-    },
+    },	
     {
       "id": "TutorialSpikeSet4",
       "tag": "Spike",
@@ -3974,7 +3951,7 @@
           "attributes": {}
         }
       ]
-    },
+    },	
     {
       "id": "FirstSegmentSpikeSet6",
       "tag": "Spike",
@@ -4456,7 +4433,7 @@
           "attributes": {}
         }
       ]
-    },
+    },	
     {
       "id": "SecondSegmentSpikeSet9",
       "tag": "Spike",
@@ -4840,7 +4817,31 @@
           "attributes": {}
         }
       ]
-    },
+    },	
+	{
+      "id": "Camera",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+          }
+        },
+        {
+          "type": "CameraRC",
+          "attributes": {
+            "node": "nCamera",
+            "viewportColour": [ 0.0, 0.0, 0.0 ],
+            "offset": [ 0, 7050, 1000 ],
+            "lookAt": [ 0, 0, -1 ],
+            "targetId": "none",
+            "follow": [ false, false, false ]
+          }
+        }
+      ]
+    },//CONTINUAR DESDE AQUI
     {
       "id": "SecondSegmentSpikeSet21",
       "tag": "Spike",
