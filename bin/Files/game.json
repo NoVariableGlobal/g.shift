@@ -139,11 +139,11 @@
         {
           "type": "DeathControllerC",
           "attributes": {}
-        }/*,
+        },
         {
           "type": "DeathStopEC",
           "attributes": {}
-        }*/
+        }
       ]
     },
     // Player Character
