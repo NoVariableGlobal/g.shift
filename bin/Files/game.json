@@ -4834,7 +4834,7 @@
           "attributes": {
             "node": "nCamera",
             "viewportColour": [ 0.0, 0.0, 0.0 ],
-            "offset": [ 0, 7050, 1000 ],
+            "offset": [ 0, 13000, 1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "none",
             "follow": [ false, false, false ]
