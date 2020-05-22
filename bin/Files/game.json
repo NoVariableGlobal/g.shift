@@ -116,7 +116,7 @@
         {
           "type": "SoundComponent",
           "attributes": {
-            "sounds": [ "gameMusic", "endMusic" ]
+            "sounds": [ "gameMusic", "endMusic", "coinSound" ]
           }
         },
         {
