@@ -15,14 +15,14 @@
       ]
     },
     {
-      "id": "Title",
+      "id": "TitleImage",
       "components": [
         {
-          "type": "GuiLabelComponent",
+          "type": "GuiImageComponent",
           "attributes": {
-            "text": "Options",
-            "position": [ 0.48, 0.2 ],
-            "size": [ 100.0, 50.0 ],
+            "image": "TaharezLook/OptionsTitle",
+            "position": [ 0.375, 0.15 ],
+            "size": [ 483.0, 76.0 ],
             "name": "OptionsTitle"
           }
         }
@@ -30,13 +30,13 @@
     },
     {
       "id": "BrightnessName",
-      "components":[
+      "components": [
         {
-          "type":"GuiLabelComponent",
+          "type": "GuiImageComponent",
           "attributes": {
-            "text": "Brightness",
-            "position": [ 0.474, 0.29 ],
-            "size": [ 110.0, 50.0 ],
+            "image": "TaharezLook/BrightTitle",
+            "position": [ 0.443, 0.32 ],
+            "size": [ 211.0, 64.0 ],
             "name": "BrightnessName"
           }
         }
@@ -44,13 +44,13 @@
     },
     {
       "id": "VolumeName",
-      "components":[
+      "components": [
         {
-          "type":"GuiLabelComponent",
+          "type": "GuiImageComponent",
           "attributes": {
-            "text": "Volume",
-            "position": [ 0.48, 0.44 ],
-            "size": [ 100.0, 50.0 ],
+            "image": "TaharezLook/VolumeTitle",
+            "position": [ 0.4625, 0.52 ],
+            "size": [ 143.0, 51.0 ],
             "name": "VolumeName"
           }
         }
@@ -67,7 +67,7 @@
           "type": "GuiLabelComponent",
           "attributes": {
             "text": "",
-            "position": [ 0.485, 0.35 ],
+            "position": [ 0.485, 0.41 ],
             "size": [ 100.0, 50.0 ],
             "name": "BrightnessMeter"
           }
@@ -75,7 +75,7 @@
 		    {
           "type": "GuiSliderComponent",
           "attributes": {
-            "position": [ 0.49, 0.25 ],
+            "position": [ 0.49, 0.31 ],
             "size": [ 20.0, 200.0 ],
             "name": "BrightnessSlider"
           }
@@ -99,7 +99,7 @@
           "type": "GuiLabelComponent",
           "attributes": {
             "text": "",
-            "position": [ 0.485, 0.50 ],
+            "position": [ 0.49, 0.6 ],
             "size": [ 100.0, 50.0 ],
             "name": "VolumeMeter"
           }
@@ -107,7 +107,7 @@
 		    {
           "type": "GuiSliderComponent",
           "attributes": {
-            "position": [ 0.49, 0.40 ],
+            "position": [ 0.49, 0.5 ],
             "size": [ 20.0, 200.0 ],
             "name": "VolumeSlider"
           }
@@ -120,18 +120,17 @@
         }
       ]
     },
-
-	  {
+    {
       "id": "ReturnButton",
       "components": [
-		    {
-          "type": "ChangeSceneButtonComponent",
-          "attributes": {
-            "text": "Return",
-            "position": [ 0.469, 0.6 ],
-            "size": [ 120.0, 40.0 ],
-            "name": "OptionsReturn",
-			      "scene": "mainmenu"
+      {
+        "type": "ChangeSceneButtonComponent",
+        "attributes": {
+          "text": "Return",
+          "position": [ 0.469, 0.8 ],
+          "size": [ 120.0, 40.0 ],
+          "name": "OptionsReturn",
+          "scene": "mainmenu"
           }
         }
       ]
