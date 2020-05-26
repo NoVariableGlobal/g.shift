@@ -18,16 +18,16 @@ void ConstantMovementC::destroy() {
     scene_->getComponentsManager()->eraseDC(this);
 }
 
-void ConstantMovementC::setSpeed(float _speed) {
-    speed = _speed;
+void ConstantMovementC::setSpeed(float speed) {
+    speed_ = speed;
 
     RigidbodyPC* body =
         dynamic_cast<RigidbodyPC*>(father_->getComponent("RigidbodyPC"));
 
-    body->setLinearVelocity(Ogre::Vector3(0.0f, speed, 0.0f));
+    body->setLinearVelocity(Ogre::Vector3(0.0f, speed_, 0.0f));
 }
 
-float ConstantMovementC::getSpeed() { return speed; }
+float ConstantMovementC::getSpeed() { return speed_; }
 
 // FACTORY INFRASTRUCTURE
 

@@ -13,8 +13,8 @@ void DeathControllerC::destroy() {
 }
 
 void DeathControllerC::playerDeath() {
-    if (!activated) {
-        activated = true;
+    if (!activated_) {
+        activated_ = true;
         scene_->changeScene("DeadMenu");
         reinterpret_cast<PlayMusicOnStartC*>(
             scene_->getEntityById("MusicManager")

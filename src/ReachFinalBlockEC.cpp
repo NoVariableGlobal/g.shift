@@ -28,7 +28,7 @@ void ReachFinalBlockEC::destroy() {
     scene_->getComponentsManager()->eraseEC(this);
 }
 
-// FACTROY INFRASTRUCTURE
+// FACTORY INFRASTRUCTURE
 ReachFinalBlockECFactory::ReachFinalBlockECFactory() = default;
 
 Component* ReachFinalBlockECFactory::create(Entity* _father, Json::Value& _data,

@@ -4,10 +4,8 @@
 #include "FactoriesFactory.h"
 #include "ParticleC.h"
 #include "Scene.h"
-
-#include <json.h>
-
 #include <iostream> // PROVISIONAL
+#include <json.h>
 
 void EmitOnStartC::destroy() {
     setActive(false);
@@ -39,4 +37,4 @@ Component* EmitOnStartCFactory::create(Entity* _father, Json::Value& _data,
     return emit;
 };
 
-DEFINE_FACTORY(EmitOnStartC);
+DEFINE_FACTORY(EmitOnStartC)

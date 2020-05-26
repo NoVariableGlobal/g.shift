@@ -23,7 +23,7 @@ void WinConditionC::win() {
     }
 }
 
-// FACTROY INFRASTRUCTURE
+// FACTORY INFRASTRUCTURE
 WinConditionCFactory::WinConditionCFactory() = default;
 
 Component* WinConditionCFactory::create(Entity* _father, Json::Value& _data,

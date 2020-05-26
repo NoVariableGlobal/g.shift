@@ -7,7 +7,6 @@
 DECLARE_FACTORY(CoinsLabelC);
 
 class CoinsLabelC final : public GuiLabelComponent {
-  private:
   public:
     CoinsLabelC() = default;
     ~CoinsLabelC() = default;

@@ -12,7 +12,7 @@
 ChangeGravityIC::ChangeGravityIC() {
     colourL_ = new Ogre::Vector3();
     colourR_ = new Ogre::Vector3();
-    speed = 0.0f;
+    speed_ = 0.0f;
 }
 
 ChangeGravityIC::~ChangeGravityIC() {
@@ -20,15 +20,16 @@ ChangeGravityIC::~ChangeGravityIC() {
     delete colourR_;
 }
 
-void ChangeGravityIC::handleInput(const SDL_Event& _event) {
-    if (_event.type == SDL_KEYDOWN && _event.key.keysym.sym == SDLK_SPACE) {
-        movingIzq = !movingIzq;
+void ChangeGravityIC::handleInput(const SDL_Event& event) {
+    if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE) {
+        gravityTowardsLeft_ = !gravityTowardsLeft_;
 
         RigidbodyPC* body = reinterpret_cast<RigidbodyPC*>(
             father_->getComponent("RigidbodyPC"));
 
-        body->setGravity(!movingIzq ? Ogre::Vector3(speed, 0.0f, 0.0f)
-                                    : Ogre::Vector3(-speed, 0.0f, 0.0f));
+        body->setGravity(!gravityTowardsLeft_
+                             ? Ogre::Vector3(speed_, 0.0f, 0.0f)
+                             : Ogre::Vector3(-speed_, 0.0f, 0.0f));
 
         Ogre::Vector3 velocity = body->getLinearVelocity();
 
@@ -36,11 +37,11 @@ void ChangeGravityIC::handleInput(const SDL_Event& _event) {
 
         reinterpret_cast<AmbientLightC*>(
             scene_->getEntityById("Light")->getComponent("AmbientLightC"))
-            ->setColour(!movingIzq ? *colourR_ : *colourL_);
+            ->setColour(!gravityTowardsLeft_ ? *colourR_ : *colourL_);
     }
 }
 
-void ChangeGravityIC::setSpeed(float _speed) { speed = _speed; }
+void ChangeGravityIC::setSpeed(float _speed) { speed_ = _speed; }
 
 void ChangeGravityIC::setColours(Ogre::Vector3 colourL, Ogre::Vector3 colourR) {
     *colourL_ = colourL;

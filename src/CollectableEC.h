@@ -6,20 +6,19 @@
 DECLARE_FACTORY(CollectableEC);
 
 class AnimationLC;
-class CollectableEC : public EventComponent {
-  private:
+class CollectableEC final : public EventComponent {
     // value of the collectable
     int value_;
 
-    AnimationLC* animations = nullptr;
+    AnimationLC* animations_ = nullptr;
 
   public:
     CollectableEC() = default;
     ~CollectableEC() = default;
 
-    virtual void destroy();
+    void destroy() override;
 
-    virtual void checkEvent();
+    void checkEvent() override;
 
     // get the value of the collectable
     int getValue();
