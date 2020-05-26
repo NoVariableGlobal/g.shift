@@ -5,15 +5,11 @@
 
 #include <string>
 
-DECLARE_FACTORY(EmitOnStartC);
+DECLARE_FACTORY(EmitOnStartC)
 
-class EmitOnStartC : public Component {
-  private:
+class EmitOnStartC final : public Component {
   public:
-    EmitOnStartC() = default;
-    ~EmitOnStartC() = default;
-
-    virtual void destroy();
+    void destroy() override;
 
     // establish the number of coins that there are in the map
     void setParticle(const std::string& name);

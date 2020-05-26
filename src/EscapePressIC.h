@@ -7,13 +7,9 @@
 DECLARE_FACTORY(EscapePressIC);
 
 class EscapePressIC : public InputComponent {
-  private:
-    bool pressing = false;
-    bool up = false;
+    bool pressing_ = false;
+    bool up_ = false;
 
   public:
-    EscapePressIC();
-    virtual ~EscapePressIC();
-
-    virtual void handleInput(const SDL_Event& _event);
+    void handleInput(const SDL_Event& _event) override;
 };

@@ -9,10 +9,6 @@
 
 #include <json.h>
 
-ConstantMovementC::ConstantMovementC() {}
-
-ConstantMovementC::~ConstantMovementC() {}
-
 void ConstantMovementC::destroy() {
     setActive(false);
     scene_->getComponentsManager()->eraseDC(this);

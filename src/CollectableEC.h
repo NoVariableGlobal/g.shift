@@ -8,14 +8,11 @@ DECLARE_FACTORY(CollectableEC);
 class AnimationLC;
 class CollectableEC final : public EventComponent {
     // value of the collectable
-    int value_;
+    int value_ = 0;
 
     AnimationLC* animations_ = nullptr;
 
   public:
-    CollectableEC() = default;
-    ~CollectableEC() = default;
-
     void destroy() override;
 
     void checkEvent() override;

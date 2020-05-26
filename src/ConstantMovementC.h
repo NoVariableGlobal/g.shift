@@ -8,9 +8,6 @@ class ConstantMovementC final : public Component {
     float speed_ = 0.0f;
 
   public:
-    ConstantMovementC();
-    virtual ~ConstantMovementC();
-
     void destroy() override;
 
     // getter / Setters

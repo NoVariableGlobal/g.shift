@@ -14,7 +14,8 @@ namespace Ogre {
 
 class ChangeGravityIC final : public InputComponent {
     float speed_;
-    Ogre::Vector3 *colourL_ = nullptr, *colourR_ = nullptr;
+    Ogre::Vector3* colourL_ = nullptr;
+    Ogre::Vector3* colourR_ = nullptr;
     bool gravityTowardsLeft_ = true;
 
   public:

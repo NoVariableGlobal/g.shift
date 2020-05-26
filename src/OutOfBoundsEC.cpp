@@ -12,8 +12,8 @@ void OutOfBoundsEC::checkEvent() {
     TransformComponent* transform = reinterpret_cast<TransformComponent*>(
         scene_->getEntityById("Player")->getComponent("TransformComponent"));
 
-    if (transform->getPosition().x > rightBorder ||
-        transform->getPosition().x < leftBorder) {
+    if (transform->getPosition().x > rightBorder_ ||
+        transform->getPosition().x < leftBorder_) {
         reinterpret_cast<DeathControllerC*>(
             scene_->getEntityById("GameManager")
                 ->getComponent("DeathControllerC"))
@@ -26,10 +26,12 @@ void OutOfBoundsEC::destroy() {
     scene_->getComponentsManager()->eraseEC(this);
 }
 
-void OutOfBoundsEC::setLeftBorder(int _leftBorder) { leftBorder = _leftBorder; }
+void OutOfBoundsEC::setLeftBorder(int _leftBorder) {
+    leftBorder_ = _leftBorder;
+}
 
 void OutOfBoundsEC::setRightBorder(int _rightBorder) {
-    rightBorder = _rightBorder;
+    rightBorder_ = _rightBorder;
 }
 
 // FACTORY INFRASTRUCTURE

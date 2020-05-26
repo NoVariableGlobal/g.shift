@@ -4,12 +4,9 @@
 #include "GuiLabelC.h"
 
 // FACTORY INFRASTRUCTURE DECLARATION
-DECLARE_FACTORY(CoinsLabelC);
+DECLARE_FACTORY(CoinsLabelC)
 
 class CoinsLabelC final : public GuiLabelComponent {
   public:
-    CoinsLabelC() = default;
-    ~CoinsLabelC() = default;
-
     void updateLabelCoins(int picked, int total);
 };

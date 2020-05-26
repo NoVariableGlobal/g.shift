@@ -8,13 +8,9 @@
 // FACTORY INFRASTRUCTURE DECLARATION
 DECLARE_FACTORY(PlayAnimationOnStartC);
 
-class PlayAnimationOnStartC : public Component {
-  private:
-    std::string music = "";
+class PlayAnimationOnStartC final : public Component {
+    std::string music_ = "";
 
   public:
-    PlayAnimationOnStartC() = default;
-    virtual ~PlayAnimationOnStartC() = default;
-
-    virtual void destroy();
+    void destroy() override;
 };

@@ -10,10 +10,6 @@
 #include <json.h>
 #include <time.h>
 
-ExitWithEscapeEC::ExitWithEscapeEC() {}
-
-ExitWithEscapeEC::~ExitWithEscapeEC() {}
-
 void ExitWithEscapeEC::setPress(bool press) {
     std::cout << pressing_;
     pressing_ = press;

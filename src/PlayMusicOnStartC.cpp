@@ -9,20 +9,20 @@
 
 // COMPONENT CODE
 void PlayMusicOnStartC::destroy() {
-    stopCurrentMusic(music);
+    stopCurrentMusic(music_);
     setActive(false);
     scene_->getComponentsManager()->eraseDC(this);
 }
 
 void PlayMusicOnStartC::setMusic(const std::string& sound) {
-    if (music != sound) {
+    if (music_ != sound) {
         reinterpret_cast<SoundComponent*>(
             father_->getComponent("SoundComponent"))
-            ->stopSound(music);
-        music = sound;
+            ->stopSound(music_);
+        music_ = sound;
         reinterpret_cast<SoundComponent*>(
             father_->getComponent("SoundComponent"))
-            ->playSound(music);
+            ->playSound(music_);
     }
 }
 

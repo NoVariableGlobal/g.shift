@@ -9,10 +9,6 @@
 #include <iostream>
 #include <json.h>
 
-ReachFinalBlockEC::ReachFinalBlockEC() {}
-
-ReachFinalBlockEC::~ReachFinalBlockEC() {}
-
 void ReachFinalBlockEC::checkEvent() {
     Entity* player = scene_->getEntityById("Player");
     auto rigid =
