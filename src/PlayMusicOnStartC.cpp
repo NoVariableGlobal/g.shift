@@ -14,7 +14,7 @@ void PlayMusicOnStartC::destroy() {
     scene_->getComponentsManager()->eraseDC(this);
 }
 
-void PlayMusicOnStartC::setMusic(std::string sound) {
+void PlayMusicOnStartC::setMusic(const std::string& sound) {
     if (music != sound) {
         reinterpret_cast<SoundComponent*>(
             father_->getComponent("SoundComponent"))
@@ -26,7 +26,7 @@ void PlayMusicOnStartC::setMusic(std::string sound) {
     }
 }
 
-void PlayMusicOnStartC::stopCurrentMusic(std::string sound) {
+void PlayMusicOnStartC::stopCurrentMusic(const std::string& sound) {
     reinterpret_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
         ->stopSound(sound);
 }

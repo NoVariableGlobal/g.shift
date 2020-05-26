@@ -16,5 +16,5 @@ class EmitOnStartC : public Component {
     virtual void destroy();
 
     // establish the number of coins that there are in the map
-    void setParticle(std::string name);
+    void setParticle(const std::string& name);
 };
