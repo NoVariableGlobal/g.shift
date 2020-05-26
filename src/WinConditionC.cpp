@@ -17,7 +17,7 @@ void WinConditionC::win() {
     if (!activated) {
         activated = true;
         scene_->changeScene("WinMenu");
-        dynamic_cast<PlayMusicOnStartC*>(
+        reinterpret_cast<PlayMusicOnStartC*>(
             scene_->getEntityById("MusicManager")
                 ->getComponent("PlayMusicOnStartC"))
             ->setMusic("menuMusic");

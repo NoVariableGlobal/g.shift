@@ -17,7 +17,7 @@ void DeathControllerC::playerDeath() {
     if (!activated) {
         activated = true;
         scene_->changeScene("DeadMenu");
-        dynamic_cast<PlayMusicOnStartC*>(
+        reinterpret_cast<PlayMusicOnStartC*>(
             scene_->getEntityById("MusicManager")
                 ->getComponent("PlayMusicOnStartC"))
             ->setMusic("endMusic");

@@ -20,16 +20,18 @@ void PlayMusicOnStartC::destroy() {
 
 void PlayMusicOnStartC::setMusic(std::string sound) {
     if (music != sound) {
-        dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
+        reinterpret_cast<SoundComponent*>(
+            father_->getComponent("SoundComponent"))
             ->stopSound(music);
         music = sound;
-        dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
+        reinterpret_cast<SoundComponent*>(
+            father_->getComponent("SoundComponent"))
             ->playSound(music);
     }
 }
 
 void PlayMusicOnStartC::stopCurrentMusic(std::string sound) {
-    dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
+    reinterpret_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
         ->stopSound(sound);
 }
 
