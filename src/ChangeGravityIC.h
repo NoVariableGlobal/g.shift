@@ -2,9 +2,6 @@
 
 #include "Factory.h"
 #include "InputComponent.h"
-#include <string>
-
-#include "Factory.h"
 
 // FACTORY INFRASTRUCTURE DECLARATION
 DECLARE_FACTORY(ChangeGravityIC);

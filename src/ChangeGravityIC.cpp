@@ -1,13 +1,10 @@
 #include "ChangeGravityIC.h"
 #include "AmbientLightC.h"
 #include "ComponentsManager.h"
-#include "ConstantMovementC.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
-#include "OgreRoot.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
-#include "TridimensionalObjectRC.h"
 
 #include <iostream>
 #include <json.h>
@@ -15,6 +12,7 @@
 ChangeGravityIC::ChangeGravityIC() {
     colourL_ = new Ogre::Vector3();
     colourR_ = new Ogre::Vector3();
+    speed = 0.0f;
 }
 
 ChangeGravityIC::~ChangeGravityIC() {

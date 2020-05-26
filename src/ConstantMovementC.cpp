@@ -4,7 +4,6 @@
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
-#include "OgreRoot.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
 

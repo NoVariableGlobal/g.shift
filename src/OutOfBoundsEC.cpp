@@ -3,7 +3,6 @@
 #include "DeathControllerC.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
-#include "OgreRoot.h"
 #include "Scene.h"
 #include "TransformComponent.h"
 

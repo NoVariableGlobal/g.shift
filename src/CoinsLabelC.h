@@ -2,8 +2,6 @@
 
 #include "Factory.h"
 #include "GuiLabelC.h"
-#include <glm/glm.hpp>
-#include <string>
 
 // FACTORY INFRASTRUCTURE DECLARATION
 DECLARE_FACTORY(CoinsLabelC);

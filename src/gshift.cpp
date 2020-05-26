@@ -15,7 +15,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
         if (game.init("InitialLoad", "TaharezLook", "TaharezLook.scheme",
                       "TaharezLook/MouseArrow", "DejaVuSans-14"))
             game.run();
-    } catch (std::exception& e) {
+    } catch (const std::exception& e) {
         std::cout << "\n"
                   << "================"
                   << "\n"

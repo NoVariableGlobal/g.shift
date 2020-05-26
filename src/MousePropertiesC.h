@@ -3,8 +3,6 @@
 #include "Component.h"
 #include "Factory.h"
 
-#include <string>
-
 DECLARE_FACTORY(MousePropertiesC);
 
 class MousePropertiesC : public Component {

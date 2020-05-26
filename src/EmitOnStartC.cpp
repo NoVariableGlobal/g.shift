@@ -3,7 +3,6 @@
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "ParticleC.h"
-#include "RigidbodyPC.h"
 #include "Scene.h"
 
 #include <json.h>
