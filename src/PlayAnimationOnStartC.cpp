@@ -35,4 +35,4 @@ Component* PlayAnimationOnStartCFactory::create(Entity* _father,
     return play;
 }
 
-DEFINE_FACTORY(PlayAnimationOnStartC);
+DEFINE_FACTORY(PlayAnimationOnStartC)

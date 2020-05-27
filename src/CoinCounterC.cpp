@@ -47,4 +47,4 @@ Component* CoinCounterCFactory::create(Entity* _father, Json::Value& _data,
     return counter;
 };
 
-DEFINE_FACTORY(CoinCounterC);
+DEFINE_FACTORY(CoinCounterC)

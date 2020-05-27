@@ -40,4 +40,4 @@ Component* EscapePressICFactory::create(Entity* _father, Json::Value& _data,
     return playerShot;
 };
 
-DEFINE_FACTORY(EscapePressIC);
+DEFINE_FACTORY(EscapePressIC)

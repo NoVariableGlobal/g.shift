@@ -12,8 +12,8 @@ void OutOfBoundsEC::checkEvent() {
     TransformComponent* transform = reinterpret_cast<TransformComponent*>(
         scene_->getEntityById("Player")->getComponent("TransformComponent"));
 
-    if (transform->getPosition().x > rightBorder_ ||
-        transform->getPosition().x < leftBorder_) {
+    const int x = static_cast<int>(transform->getPosition().x);
+    if (x > rightBorder_ || x < leftBorder_) {
         reinterpret_cast<DeathControllerC*>(
             scene_->getEntityById("GameManager")
                 ->getComponent("DeathControllerC"))
@@ -26,12 +26,12 @@ void OutOfBoundsEC::destroy() {
     scene_->getComponentsManager()->eraseEC(this);
 }
 
-void OutOfBoundsEC::setLeftBorder(int _leftBorder) {
-    leftBorder_ = _leftBorder;
+void OutOfBoundsEC::setLeftBorder(const int leftBorder) {
+    leftBorder_ = leftBorder;
 }
 
-void OutOfBoundsEC::setRightBorder(int _rightBorder) {
-    rightBorder_ = _rightBorder;
+void OutOfBoundsEC::setRightBorder(const int rightBorder) {
+    rightBorder_ = rightBorder;
 }
 
 // FACTORY INFRASTRUCTURE
@@ -58,4 +58,4 @@ Component* OutOfBoundsECFactory::create(Entity* _father, Json::Value& _data,
     return outOfBounds;
 }
 
-DEFINE_FACTORY(OutOfBoundsEC);
+DEFINE_FACTORY(OutOfBoundsEC)

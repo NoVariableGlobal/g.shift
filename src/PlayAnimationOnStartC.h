@@ -6,7 +6,7 @@
 #include <string>
 
 // FACTORY INFRASTRUCTURE DECLARATION
-DECLARE_FACTORY(PlayAnimationOnStartC);
+DECLARE_FACTORY(PlayAnimationOnStartC)
 
 class PlayAnimationOnStartC final : public Component {
     std::string music_ = "";

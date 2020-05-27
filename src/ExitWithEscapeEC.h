@@ -6,7 +6,7 @@ DECLARE_FACTORY(ExitWithEscapeEC)
 
 class GuiLabelComponent;
 class ExitWithEscapeEC final : public EventComponent {
-    int timeToExit_ = 2;
+    float timeToExit_ = 2.0f;
     float startTime_ = 0;
     bool pressing_ = false;
     bool out_ = false;

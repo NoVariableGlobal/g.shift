@@ -39,4 +39,4 @@ Component* WinConditionCFactory::create(Entity* _father, Json::Value& _data,
     return winCondition;
 }
 
-DEFINE_FACTORY(WinConditionC);
+DEFINE_FACTORY(WinConditionC)

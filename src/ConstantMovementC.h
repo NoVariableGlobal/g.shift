@@ -2,7 +2,7 @@
 #include "Component.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(ConstantMovementC);
+DECLARE_FACTORY(ConstantMovementC)
 
 class ConstantMovementC final : public Component {
     float speed_ = 0.0f;

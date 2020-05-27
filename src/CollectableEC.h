@@ -3,7 +3,7 @@
 #include "EventComponent.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(CollectableEC);
+DECLARE_FACTORY(CollectableEC)
 
 class AnimationLC;
 class CollectableEC final : public EventComponent {

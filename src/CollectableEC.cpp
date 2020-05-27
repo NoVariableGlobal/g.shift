@@ -63,4 +63,4 @@ Component* CollectableECFactory::create(Entity* _father, Json::Value& _data,
     return collectable;
 };
 
-DEFINE_FACTORY(CollectableEC);
+DEFINE_FACTORY(CollectableEC)

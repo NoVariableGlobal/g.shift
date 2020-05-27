@@ -11,7 +11,7 @@
 
 void ReachFinalBlockEC::checkEvent() {
     Entity* player = scene_->getEntityById("Player");
-    auto rigid =
+    auto* rigid =
         reinterpret_cast<RigidbodyPC*>(player->getComponent("RigidbodyPC"));
     if (rigid->getLinearVelocity().y <= 0)
         reinterpret_cast<WinConditionC*>(
@@ -40,4 +40,4 @@ Component* ReachFinalBlockECFactory::create(Entity* _father, Json::Value& _data,
     return finalBlock;
 }
 
-DEFINE_FACTORY(ReachFinalBlockEC);
+DEFINE_FACTORY(ReachFinalBlockEC)

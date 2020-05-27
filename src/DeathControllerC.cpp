@@ -39,4 +39,4 @@ Component* DeathControllerCFactory::create(Entity* _father, Json::Value& _data,
     return controller;
 };
 
-DEFINE_FACTORY(DeathControllerC);
+DEFINE_FACTORY(DeathControllerC)

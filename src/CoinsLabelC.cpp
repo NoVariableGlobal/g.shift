@@ -59,4 +59,4 @@ Component* CoinsLabelCFactory::create(Entity* _father, Json::Value& _data,
     return coins;
 }
 
-DEFINE_FACTORY(CoinsLabelC);
+DEFINE_FACTORY(CoinsLabelC)

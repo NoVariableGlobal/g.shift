@@ -9,13 +9,9 @@
 #include <iostream>
 #include <json.h>
 
-DeathStopEC::DeathStopEC() {}
-
-DeathStopEC::~DeathStopEC() {}
-
 void DeathStopEC::checkEvent() {
     Entity* player = scene_->getEntityById("Player");
-    auto rigid =
+    auto* rigid =
         reinterpret_cast<RigidbodyPC*>(player->getComponent("RigidbodyPC"));
     if (rigid->getLinearVelocity().y <= 0)
         reinterpret_cast<DeathControllerC*>(
@@ -44,4 +40,4 @@ Component* DeathStopECFactory::create(Entity* _father, Json::Value& _data,
     return deathStop;
 };
 
-DEFINE_FACTORY(DeathStopEC);
+DEFINE_FACTORY(DeathStopEC)

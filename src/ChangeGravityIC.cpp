@@ -62,7 +62,7 @@ Component* ChangeGravityICFactory::create(Entity* _father, Json::Value& _data,
 
     if (!_data["speed"].isDouble())
         throw std::exception("ChangeGravityIC: speed is not a double");
-    changeGravity->setSpeed(_data["speed"].asDouble());
+    changeGravity->setSpeed(_data["speed"].asFloat());
 
     if (!_data["colourL"].isArray() || !_data["colourL"][0].isDouble())
         throw std::exception(
@@ -80,4 +80,4 @@ Component* ChangeGravityICFactory::create(Entity* _father, Json::Value& _data,
     return changeGravity;
 };
 
-DEFINE_FACTORY(ChangeGravityIC);
+DEFINE_FACTORY(ChangeGravityIC)

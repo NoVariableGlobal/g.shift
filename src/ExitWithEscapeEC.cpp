@@ -6,9 +6,9 @@
 #include "GuiLabelC.h"
 #include "Scene.h"
 
+#include <ctime>
 #include <iostream>
 #include <json.h>
-#include <time.h>
 
 void ExitWithEscapeEC::setPress(bool press) {
     std::cout << pressing_;
@@ -31,7 +31,7 @@ void ExitWithEscapeEC::checkEvent() {
 
     if (pressing_ && !out_) {
 
-        float seconds = clock() / static_cast<float>(CLOCKS_PER_SEC);
+        const float seconds = clock() / static_cast<float>(CLOCKS_PER_SEC);
         if (seconds - startTime_ >= timeToExit_) {
             scene_->changeScene("InitialLoad", true);
             out_ = true;
@@ -56,4 +56,4 @@ Component* ExitWithEscapeECFactory::create(Entity* _father, Json::Value& _data,
     return manager;
 };
 
-DEFINE_FACTORY(ExitWithEscapeEC);
+DEFINE_FACTORY(ExitWithEscapeEC)

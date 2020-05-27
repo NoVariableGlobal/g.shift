@@ -4,7 +4,7 @@
 #include "InputComponent.h"
 
 // FACTORY INFRASTRUCTURE DECLARATION
-DECLARE_FACTORY(EscapePressIC);
+DECLARE_FACTORY(EscapePressIC)
 
 class EscapePressIC : public InputComponent {
     bool pressing_ = false;

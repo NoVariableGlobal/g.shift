@@ -51,4 +51,4 @@ Component* PlayMusicOnStartCFactory::create(Entity* _father, Json::Value& _data,
     return play;
 }
 
-DEFINE_FACTORY(PlayMusicOnStartC);
+DEFINE_FACTORY(PlayMusicOnStartC)

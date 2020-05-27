@@ -44,4 +44,4 @@ Component* ConstantMovementCFactory::create(Entity* _father, Json::Value& _data,
     return constantMovementPC;
 };
 
-DEFINE_FACTORY(ConstantMovementC);
+DEFINE_FACTORY(ConstantMovementC)

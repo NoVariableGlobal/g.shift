@@ -58,4 +58,4 @@ Component* GuiCoinsPickedLabelCFactory::create(Entity* _father,
     return coinPickedLabel;
 }
 
-DEFINE_FACTORY(GuiCoinsPickedLabelC);
+DEFINE_FACTORY(GuiCoinsPickedLabelC)
